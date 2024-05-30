@@ -239,6 +239,57 @@ body {
     line-height: 1.6;
 }
 
+.carousel-text {
+    position: absolute;
+    top: 33%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 32px; 
+    color: #f7f6e7;
+    font-family: "Sevillana", cursive;
+    box-shadow: 0 2px 4px white !important; 
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 5px; 
+}
+
+.boton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    color: rgb(39, 35, 35);
+    margin-top: 200px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px black !important;
+    border-radius: 10px;
+}
+
+.boton.redes {
+    background-color: burlywood;
+    color: white;
+    box-shadow: 0 4px 6px burlywood !important;
+}
+
+/* Adicionales estilos para la galería */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+}
+
+.carousel-item:nth-child(3) .carousel-text {
+    top: -15%;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .carousel-item img {
     width: 100%;
     max-width: 550px;
@@ -268,7 +319,7 @@ body {
     text-align: center;
 }
 
-.main h2 {
+.main h1 {
     color: #fff;
     margin-bottom: 20px;
     font-family: "Sevillana", cursive;
@@ -283,13 +334,25 @@ body {
     color: #fff;
 }
 
+.boton2 {
+    text-decoration: none;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px burlywood !important;
+    border-radius: 10px;
+}
+
+.boton2:hover {
+    color: rgba(216, 148, 60, 0.945) !important;
+    border-radius: 10px;
+}
+
 #historia {
     padding: 20px;
     color: white;
     text-align: center;
 }
 
-#historia h2, #historia h3 {
+#historia h1, #historia h2 {
     font-size: 2.5rem;
     text-align: center;
     font-family: "Sevillana", cursive;
@@ -337,7 +400,7 @@ body {
     color: white;
 }
 
-#sabores h2 {
+#sabores h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
     font-family: "Sevillana", cursive;
@@ -377,6 +440,10 @@ body {
 #contacto {
     text-align: center;
     color: #fff;
+}
+
+#contacto h1 {
+    font-family: "Sevillana", cursive;
 }
 
 #contacto h2 {
