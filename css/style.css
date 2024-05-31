@@ -129,6 +129,10 @@ header {
         font-size: 18px;
     }
 
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
     .main .contenedor h2 {
         font-size: 24px;
     }
@@ -360,7 +364,7 @@ body {
 
 .integrantes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
     margin-top: 20px;
     font-family: "Sevillana", cursive;
@@ -414,17 +418,18 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .grid-item {
     border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: 5px;
+    padding: 1rem;
     text-align: center;
     background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .grid-item img {
