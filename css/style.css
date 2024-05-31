@@ -316,7 +316,7 @@ body {
 }
 
 .boton:hover {
-    color: rgba(216, 148, 60, 0.945) !important;
+    color: brown !important;
     border-radius: 10px;
 }
 
