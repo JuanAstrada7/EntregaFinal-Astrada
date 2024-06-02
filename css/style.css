@@ -286,9 +286,14 @@ body {
 }
 
 .boton.redes {
-    background-color: burlywood;
+    
     color: white;
     box-shadow: 0 4px 6px burlywood !important;
+}
+
+.boton:hover {
+    color: brown !important;
+    border-radius: 10px;
 }
 
 /* Adicionales estilos para la galería */
@@ -315,10 +320,7 @@ body {
     padding: 0 20px;
 }
 
-.boton:hover {
-    color: brown !important;
-    border-radius: 10px;
-}
+
 
 .main {
     background-color: hsla(43, 32%, 22%, 0.952);
