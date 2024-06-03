@@ -321,8 +321,6 @@ body {
     padding: 0 20px;
 }
 
-
-
 .main {
     background-color: hsla(43, 32%, 22%, 0.952);
     padding: 50px 0;
@@ -330,7 +328,7 @@ body {
 }
 
 .main h1 {
-    color: #fff;
+    color: #fff ;
     margin-bottom: 20px;
     font-family: "Sevillana", cursive;
 }
@@ -446,6 +444,13 @@ body {
 
 .grid-item p {
     margin: 10px 0;
+}
+
+.main-novedades {
+    background-color: #333;
+    color: #fff;
+    padding: 12% 0;
+    text-align: center;
 }
 
 #contacto {
