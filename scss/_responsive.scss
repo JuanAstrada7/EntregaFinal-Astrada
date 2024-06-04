@@ -1,0 +1,172 @@
+@import 'mixins'; // Asegúrate de que los mixins están disponibles
+
+@media only screen and (min-width: 768px) {
+  header {
+    align-items: center;
+  }
+
+  header nav {
+    display: block;
+  }
+
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  header nav ul li {
+    margin: 5px;
+  }
+
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    @include font-family('Arial, Helvetica');
+  }
+}
+
+@media only screen and (min-width: 1078px) {
+  .container-plataforma a {
+    display: block;
+    margin-right: 5px;
+    color: white;
+    text-decoration: none;
+    @include font-family('Arial, Helvetica');
+  }
+
+  .container-plataforma {
+    @include flex-center();
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 50px;
+    height: auto;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    @include responsive-font(14px);
+  }
+
+  .carousel-item h2,
+  .carousel-item p,
+  .carousel-item .boton {
+    font-size: 18px;
+    margin-top: 100px;
+  }
+
+  .carousel-item .boton {
+    padding: 8px 16px;
+    font-size: 18px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .main .contenedor h2 {
+    font-size: 24px;
+  }
+
+  .main .contenedor p,
+  .main .contenedor .boton {
+    font-size: 14px;
+  }
+
+  .whatsapp img {
+    width: 50px;
+    height: auto;
+  }
+
+  .footer .redes img {
+    width: 30px;
+    height: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar-brand img {
+    width: 75px;
+    height: auto;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    @include responsive-font(16px);
+  }
+
+  .carousel-item h2,
+  .carousel-item p,
+  .carousel-item .boton {
+    font-size: 24px;
+    margin-top: 150px;
+  }
+
+  .carousel-item .boton {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+
+  .main .contenedor h2 {
+    font-size: 28px;
+  }
+
+  .main .contenedor p,
+  .main .contenedor .boton {
+    font-size: 18px;
+  }
+
+  .whatsapp img {
+    width: 75px;
+    height: auto;
+  }
+
+  .footer .redes img {
+    width: 40px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  .navbar-brand img {
+    width: 100px;
+    height: auto;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    @include responsive-font(18px);
+  }
+
+  .carousel-item h2,
+  .carousel-item p,
+  .carousel-item .boton {
+    font-size: 36px;
+    margin-top: 200px;
+  }
+
+  .carousel-item .boton {
+    padding: 15px 30px;
+    font-size: 24px;
+  }
+
+  .main .contenedor h2 {
+    font-size: 32px;
+  }
+
+  .main .contenedor p,
+  .main .contenedor .boton {
+    font-size: 20px;
+  }
+
+  .whatsapp img {
+    width: 100px;
+    height: auto;
+  }
+
+  .footer .redes img {
+    width: 50px;
+    height: auto;
+  }
+}
+
+  

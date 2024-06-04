@@ -1,0 +1,260 @@
+@import 'mixins'; // Asegúrate de que los mixins están disponibles
+
+body {
+  background-color: #1A1A1A;
+  @include font-family('Arial');
+  line-height: 1.6;
+}
+
+.carousel-text {
+  position: absolute;
+  top: 33%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @extend %text-center;
+  font-size: 30px; 
+  color: #f7f6e7;
+  @include font-family('Sevillana');
+  @include box-shadow(0 2px 4px white);
+  padding: 10px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  @extend %rounded;
+}
+
+.carousel-item:nth-child(3) .carousel-text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  @extend %text-center;
+  margin-top: -80px;
+  font-size: 1rem;
+  padding: 5px;
+  @extend %rounded;
+  box-shadow: none !important;
+}
+
+.boton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @extend %text-center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  color: rgb(39, 35, 35);
+  margin-top: 200px;
+  @include font-family('Arial');
+  @include box-shadow(0 4px 6px black);
+  @extend %rounded;
+}
+
+.boton.redes {
+  color: white;
+  @include box-shadow(0 4px 6px burlywood);
+}
+
+.boton:hover {
+  color: rgb(150, 104, 44) !important;
+  @extend %rounded;
+}
+
+/* Adicionales estilos para la galería */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #1A1A1A;
+}
+
+.carousel-item img {
+  width: 100%;
+  max-width: 550px;
+  padding: 20px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border: 2px solid gray;
+  @extend %rounded;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main {
+  background-color: hsla(43, 32%, 22%, 0.952);
+  padding: 50px 0;
+  @extend %text-center;
+}
+
+.main h1 {
+  color: #fff ;
+  margin-bottom: 20px;
+  @include font-family('Sevillana');
+}
+
+.main p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.main a {
+  color: #fff;
+}
+
+.boton2 {
+  text-decoration: none;
+  padding: 10px 20px;
+  @include box-shadow(0 4px 6px burlywood);
+  @extend %rounded;
+}
+
+.boton2:hover {
+  color: rgba(216, 148, 60, 0.945) !important;
+  @extend %rounded;
+}
+
+#historia {
+  padding: 20px;
+  color: white;
+  @extend %text-center;
+}
+
+#historia h1, #historia h2 {
+  font-size: 2.5rem;
+  @extend %text-center;
+  @include font-family('Sevillana');
+}
+
+.integrantes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  @include font-family('Sevillana');
+}
+
+.integrante {
+  @extend %text-center;
+}
+
+.imagen-grande {
+  grid-column: span 2;
+  width: 80%;
+  height: auto;
+  @extend %rounded;
+}
+
+.imagen-pequeña {
+  width: 80%;
+  height: auto;
+  @extend %rounded;
+}
+
+.integrante h4 {
+  margin: 10px 0 5px;
+}
+
+.integrante p {
+  margin-left: 60px;
+  grid-column: span 2;
+  width: 70%;
+  text-align: justify;
+}
+
+#sabores {
+  padding: 20px;
+  @extend %text-center;
+  color: white;
+}
+
+#sabores h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  @include font-family('Sevillana');
+}
+
+#sabores p {
+  margin: 10px 0;
+  color: #1A1A1A;
+  @include font-family('Sevillana');
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  @extend %rounded;
+  padding: 1rem;
+  @extend %text-center;
+  background-color: #f9f9f9;
+  @include box-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.grid-item img {
+  width: 100%;
+  height: 181px;
+  @extend %rounded;
+}
+
+.grid-item p {
+  margin: 10px 0;
+}
+
+.main-novedades {
+  background-color: #333;
+  color: #fff;
+  padding: 12% 0;
+  @extend %text-center;
+}
+
+#contacto {
+  @extend %text-center;
+  color: #fff;
+}
+
+#contacto h1 {
+  @include font-family('Sevillana');
+}
+
+#contacto h2 {
+  @include font-family('Sevillana');
+}
+
+#contacto address {
+  @include font-family('Sevillana');
+}
+
+.whatsapp img {
+  position: fixed;
+  right: 25px;
+  bottom: 40px;
+  width: 50px;
+  height: auto;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  @extend %text-center;
+}
+
+.redes {
+  margin-bottom: 20px;
+}
+
+.redes a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.texto p {
+  font-size: 14px;
+}

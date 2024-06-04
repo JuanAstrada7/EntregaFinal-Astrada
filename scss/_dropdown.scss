@@ -1,0 +1,22 @@
+@import 'mixins'; // Asegúrate de que los mixins están disponibles
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: rgba(75, 44, 3, 0.945);
+  @include box-shadow(0 8px 16px whitesmoke);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 1000;
+}
+
+.dropdown-item:hover {
+  background-color: burlywood;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}

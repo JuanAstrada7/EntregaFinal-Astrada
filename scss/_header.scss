@@ -1,0 +1,8 @@
+@import 'mixins'; // Asegúrate de que los mixins están disponibles
+
+header {
+  width: 100%;
+  @include flex-center(space-around);
+  background-color: rgba(75, 44, 3, 0.945);
+  border-bottom: 1px solid gray;
+}

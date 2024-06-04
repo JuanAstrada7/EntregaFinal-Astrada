@@ -1,0 +1,25 @@
+@import 'mixins'; // Asegúrate de que los mixins están disponibles
+
+.navbar-brand {
+  color: white !important;
+  font-size: 24px;
+  font-weight: bold;
+  @include flex-center();
+  @include font-family('Sevillana');
+}
+
+.navbar a {
+  color: white;
+  @include font-family('Arial, Helvetica');
+}
+
+.nav-link:hover {
+  color: burlywood;
+}
+
+.navbar-brand img {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 80%;
+}
