@@ -1,8 +1,32 @@
-@import 'mixins'; // Asegúrate de que los mixins están disponibles
+@import 'variables';
 
 header {
   width: 100%;
   @include flex-center(space-around);
-  background-color: rgba(75, 44, 3, 0.945);
-  border-bottom: 1px solid gray;
+  background-color: $color-primary;
+  border-bottom: 1px solid $color-border;
+}
+
+.navbar-brand {
+  color: $color-text !important;
+  font-size: $text-size-lg;
+  font-weight: bold;
+  @include flex-center();
+  font-family: $font-primary !important;
+}
+
+.navbar a {
+  color: $color-text;
+  font-family: $font-secondary;
+}
+
+.nav-link:hover {
+  color: $color-secondary;
+}
+
+.navbar-brand img {
+  width: 80px;
+  height: auto;
+  margin-right: $spacing-unit;
+  border-radius: 80%;
 }
