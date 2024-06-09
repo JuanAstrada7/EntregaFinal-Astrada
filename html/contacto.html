@@ -48,19 +48,25 @@
           </nav>
     </header>
 
-    <section id="contacto">
-        <div class="container">
-            <h1>Dejanos tu consulta</h1>
-            <form action="enviar.php" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <button type="submit" style=" background-color: burlywood; padding: 1px; border-radius: 5px;">Enviar</button>
-            </form>
-        </div>
+    <section id="contacto" class="py-5">
+      <div class="container">
+          <h1 class="mb-4">Dejanos tu consulta</h1>
+          <form action="enviar.php" method="POST">
+              <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre:</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" required>
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                  <label for="mensaje" class="form-label">Mensaje:</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+      </div>
     </section>
 
     <section id="contacto">
