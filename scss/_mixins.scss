@@ -1,0 +1,36 @@
+@mixin flex-center($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+  }
+  
+  @mixin font-family($family) {
+    font-family: $family, sans-serif;
+  }
+  
+  @mixin transition($property, $duration: 0.3s, $ease: ease-in-out) {
+    transition: $property $duration $ease;
+  }
+  
+  @mixin box-shadow($shadow: 0 4px 6px rgba(0, 0, 0, 0.1)) {
+    box-shadow: $shadow;
+  }
+  
+  @mixin responsive-font($size) {
+    font-size: $size;
+    @media (max-width: 768px) {
+      font-size: $size * 0.75;
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      font-size: $size * 0.85;
+    }
+  }
+  
+  %text-center {
+    text-align: center;
+  }
+  
+  %rounded {
+    border-radius: 5px;
+  }
+  
