@@ -50,34 +50,58 @@
 
     <section id="contacto" class="py-5">
       <div class="container">
-          <h1 class="mb-4">Dejanos tu consulta</h1>
-          <form action="enviar.php" method="POST">
-              <div class="mb-3">
-                  <label for="nombre" class="form-label">Nombre:</label>
+        <div class="row">
+          <!-- Columna del formulario -->
+          <div class="col-md-4">
+            <h1 class="mb-4">Dejanos tu consulta</h1>
+            <form action="enviar.php" method="POST">
+              <div class="row mb-3">
+                <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
+                <div class="col-sm-10">
                   <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
               </div>
-              <div class="mb-3">
-                  <label for="email" class="form-label">Email:</label>
+              <div class="row mb-3">
+                <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                <div class="col-sm-10">
                   <input type="email" class="form-control" id="email" name="email" required>
+                </div>
               </div>
-              <div class="mb-3">
-                  <label for="mensaje" class="form-label">Mensaje:</label>
-                  <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+              <div class="row mb-3">
+                <label for="mensaje" class="col-sm-2 col-form-label">Mensaje:</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+                </div>
               </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
+              <div class="row">
+                <div class="col-sm-10 offset-sm-2">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+    
+          <!-- Columna de contacto -->
+          <div class="col-md-4">
+            <h2>Puedes Contactarnos</h2>
+            <p>Estamos ubicados en:</p>
+            <address>
+              Juan Bautista Daniel, 2040<br>
+              Córdoba, Argentina<br>
+              Teléfono: 0351 348-5897<br>
+              Email: ladomingaalfajores@gmail.com
+            </address>
+          </div>
+    
+          <!-- Columna de ubicación en Google Maps -->
+          <div class="col-md-4">
+            <h2>Nuestra Ubicación</h2>
+            <div class="map-responsive">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.5252095696937!2d-64.2316115!3d-31.372078699999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329956998e4ef5%3A0x2879efb75e7a7d31!2sLa%20Dominga%20Alfajores!5e0!3m2!1ses!2sar!4v1718985832448!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-
-    <section id="contacto">
-        <h2>Puedes Cotactarnos</h2>
-        <p>Estamos ubicados en:</p>
-        <address>
-            Calle de los Alfajores, 123<br>
-            Ciudad del Dulce, País del Sabor<br>
-            Teléfono: 123-456-789<br>
-            Email: info@alfajoresdeliciosos.com
-        </address>
     </section>
 
     <section class="whatsapp">
@@ -90,9 +114,9 @@
 
     <main class="main">
       <div class="contenedor">
-          <h1>Disfruta tu día con los mejores alfajores artesanales</h1>
-          <p>Un espacio bien decorado y amigable hace que seamos mucho más productivos. ¿Qué estás esperando? Mira los sabores que tenemos y elige los que más se adapten a tus gustos.</p>
-          <a class="boton2" href="html/sabores.html">Comprar ahora</a>
+        <h3>Disfruta tu día con los mejores alfajores artesanales</h3>
+          <p>Productos 100% artesanales hechos con ❤ Mejores amigas de toda la vida juntamos lo que más amamos y mejor nos sale para crear sabores inolvidables🖤</p>
+          <a class="boton2" href="sabores.html">Comprar ahora</a>
       </div>
     </main>
 
