@@ -52,19 +52,29 @@
       <div class="container">
           <h1 class="mb-4">Dejanos tu consulta</h1>
           <form action="enviar.php" method="POST">
-              <div class="mb-3">
-                  <label for="nombre" class="form-label">Nombre:</label>
-                  <input type="text" class="form-control" id="nombre" name="nombre" required>
+              <div class="row mb-3">
+                  <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
+                  <div class="col-sm-10">
+                      <input type="text" class="form-control" id="nombre" name="nombre" required>
+                  </div>
               </div>
-              <div class="mb-3">
-                  <label for="email" class="form-label">Email:</label>
-                  <input type="email" class="form-control" id="email" name="email" required>
+              <div class="row mb-3">
+                  <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                  <div class="col-sm-10">
+                      <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
               </div>
-              <div class="mb-3">
-                  <label for="mensaje" class="form-label">Mensaje:</label>
-                  <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+              <div class="row mb-3">
+                  <label for="mensaje" class="col-sm-2 col-form-label">Mensaje:</label>
+                  <div class="col-sm-10">
+                      <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                  </div>
               </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <div class="row">
+                  <div class="col-sm-10 offset-sm-2">
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                  </div>
+              </div>
           </form>
       </div>
     </section>

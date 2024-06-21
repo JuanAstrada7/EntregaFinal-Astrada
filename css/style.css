@@ -125,6 +125,16 @@ header {
   border-radius: 5px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 @media only screen and (min-width: 768px) {
   header {
     align-items: center;
@@ -135,6 +145,8 @@ header {
   header nav ul {
     list-style-type: none;
     display: flex;
+    padding: 0;
+    margin: 0;
   }
   header nav ul li {
     margin: 5px;
@@ -157,6 +169,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Para asegurar que los elementos se ajusten y no causen desbordamiento */
   }
 }
 @media (max-width: 768px) {
