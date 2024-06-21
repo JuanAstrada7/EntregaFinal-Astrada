@@ -383,8 +383,9 @@ body {
   padding: 50px 0;
 }
 
-.main h1 {
+.main h3 {
   color: #fff;
+  font-size: 3rem;
   margin-bottom: 20px;
   font-family: "Sevillana", sans-serif;
 }
@@ -495,6 +496,9 @@ body {
 }
 
 .main-novedades .contenedor h1 {
+  margin-bottom: 20px;
+}
+.main-novedades .contenedor h2 {
   margin-bottom: 20px;
 }
 .main-novedades .contenedor img {

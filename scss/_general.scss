@@ -86,8 +86,9 @@ body {
   @extend %text-center;
 }
 
-.main h1 {
+.main h3 {
   color: #fff ;
+  font-size: 3rem;
   margin-bottom: 20px;
   @include font-family('Sevillana');
 }
@@ -216,6 +217,10 @@ body {
   .contenedor {
     h1 {
       margin-bottom: 20px; 
+    }
+
+    h2{
+      margin-bottom: 20px;
     }
 
     img {
