@@ -126,6 +126,10 @@ body {
   @include font-family('Sevillana');
 }
 
+#historia h3 {
+  margin-top: 10px;
+}
+
 .integrantes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -250,10 +254,12 @@ body {
 
 #contacto h2 {
   @include font-family('Sevillana');
+  font-size: 3rem;
 }
 
 #contacto address {
   @include font-family('Sevillana');
+  font-size: x-large;
 }
 
 .whatsapp img {

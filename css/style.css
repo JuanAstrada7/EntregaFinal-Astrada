@@ -313,6 +313,21 @@ html, body {
     height: auto;
   }
 }
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 .footer, #contacto, .main-novedades, .grid-item, #sabores, .integrante, #historia h1, #historia h2, #historia, .main, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   text-align: center;
 }
@@ -432,6 +447,10 @@ body {
   font-family: "Sevillana", sans-serif;
 }
 
+#historia h3 {
+  margin-top: 10px;
+}
+
 .integrantes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -537,10 +556,12 @@ body {
 
 #contacto h2 {
   font-family: "Sevillana", sans-serif;
+  font-size: 3rem;
 }
 
 #contacto address {
   font-family: "Sevillana", sans-serif;
+  font-size: x-large;
 }
 
 .whatsapp img {
