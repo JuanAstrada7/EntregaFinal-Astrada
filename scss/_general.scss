@@ -60,8 +60,6 @@ body {
   @extend %rounded;
 }
 
-
-
 .carousel-item img {
   width: 100%;
   max-width: 550px;
@@ -86,8 +84,9 @@ body {
   @extend %text-center;
 }
 
-.main h1 {
+.main h3 {
   color: #fff ;
+  font-size: 3rem;
   margin-bottom: 20px;
   @include font-family('Sevillana');
 }
@@ -123,6 +122,10 @@ body {
   font-size: 2.5rem;
   @extend %text-center;
   @include font-family('Sevillana');
+}
+
+#historia h3 {
+  margin-top: 10px;
 }
 
 .integrantes-grid {
@@ -218,6 +221,10 @@ body {
       margin-bottom: 20px; 
     }
 
+    h2{
+      margin-bottom: 20px;
+    }
+
     img {
       animation: bounce 2s infinite;
       margin-top: 20px; 
@@ -245,10 +252,12 @@ body {
 
 #contacto h2 {
   @include font-family('Sevillana');
+  font-size: 3rem;
 }
 
 #contacto address {
   @include font-family('Sevillana');
+  font-size: x-large;
 }
 
 .whatsapp img {

@@ -125,6 +125,16 @@ header {
   border-radius: 5px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 @media only screen and (min-width: 768px) {
   header {
     align-items: center;
@@ -135,6 +145,8 @@ header {
   header nav ul {
     list-style-type: none;
     display: flex;
+    padding: 0;
+    margin: 0;
   }
   header nav ul li {
     margin: 5px;
@@ -157,6 +169,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 768px) {
@@ -300,6 +313,21 @@ header {
     height: auto;
   }
 }
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 .footer, #contacto, .main-novedades, .grid-item, #sabores, .integrante, #historia h1, #historia h2, #historia, .main, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   text-align: center;
 }
@@ -383,8 +411,9 @@ body {
   padding: 50px 0;
 }
 
-.main h1 {
+.main h3 {
   color: #fff;
+  font-size: 3rem;
   margin-bottom: 20px;
   font-family: "Sevillana", sans-serif;
 }
@@ -416,6 +445,10 @@ body {
 #historia h1, #historia h2 {
   font-size: 2.5rem;
   font-family: "Sevillana", sans-serif;
+}
+
+#historia h3 {
+  margin-top: 10px;
 }
 
 .integrantes-grid {
@@ -497,6 +530,9 @@ body {
 .main-novedades .contenedor h1 {
   margin-bottom: 20px;
 }
+.main-novedades .contenedor h2 {
+  margin-bottom: 20px;
+}
 .main-novedades .contenedor img {
   animation: bounce 2s infinite;
   margin-top: 20px;
@@ -520,10 +556,12 @@ body {
 
 #contacto h2 {
   font-family: "Sevillana", sans-serif;
+  font-size: 3rem;
 }
 
 #contacto address {
   font-family: "Sevillana", sans-serif;
+  font-size: x-large;
 }
 
 .whatsapp img {
