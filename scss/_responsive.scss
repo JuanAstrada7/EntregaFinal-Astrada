@@ -10,7 +10,7 @@ html, body {
   overflow-x: hidden;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   header {
     align-items: center;
   }
@@ -34,22 +34,7 @@ html, body {
     color: white;
     text-decoration: none;
     @include font-family('Arial, Helvetica');
-  }
-}
-
-@media only screen and (min-width: 1078px) {
-  .container-plataforma a {
-    display: block;
-    margin-right: 5px;
-    color: white;
-    text-decoration: none;
-    @include font-family('Arial, Helvetica');
-  }
-
-  .container-plataforma {
-    @include flex-center();
-    flex-wrap: wrap;
-  }
+  } 
 }
 
 @media (max-width: 768px) {
@@ -62,8 +47,23 @@ html, body {
     @include responsive-font(14px);
   }
 
-  .carousel-item h2,
-  .carousel-item p,
+  .carousel-item h1 {
+    font-size: 18px;
+    margin-top: -50px;
+    left: 40px;
+  }
+  .carousel-item h2 {
+    font-size: 18px;
+    margin-top: 100px;
+    font-size: 18px;
+    margin-top: 100px;
+    left: 40px;
+  }
+  .carousel-item p {
+    font-size: 18px;
+    margin-top: 100px;
+    margin-top: -35px !important;
+  }
   .carousel-item .boton {
     font-size: 18px;
     margin-top: 100px;
@@ -98,7 +98,7 @@ html, body {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1366px) {
   .navbar-brand img {
     width: 75px;
     height: auto;
@@ -140,7 +140,7 @@ html, body {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1367px) {
   .navbar-brand img {
     width: 100px;
     height: auto;
@@ -150,8 +150,23 @@ html, body {
     @include responsive-font(18px);
   }
 
-  .carousel-item h2,
-  .carousel-item p,
+  .carousel-item h1 {
+    font-size: 35px;
+    margin-top: -50px;
+    left: 750px;
+    
+  }
+  .carousel-item h2 {
+    font-size: 35px;
+    margin-top: 180px;
+    left: 750px;
+  }
+  .carousel-item p {
+    font-size: 25px !important;
+    margin-top: 100px;
+    margin-top: -60px !important;
+  }
+
   .carousel-item .boton {
     font-size: 36px;
     margin-top: 200px;
