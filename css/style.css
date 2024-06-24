@@ -135,7 +135,7 @@ html, body {
   overflow-x: hidden;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   header {
     align-items: center;
   }
@@ -221,7 +221,7 @@ html, body {
     height: auto;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1366px) {
   .navbar-brand img {
     width: 75px;
     height: auto;
@@ -230,17 +230,17 @@ html, body {
     font-size: 16px;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px) and (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1366px) and (max-width: 768px) {
   .navbar-nav .nav-item .nav-link {
     font-size: 12px;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px) and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1366px) and (min-width: 769px) and (max-width: 1024px) {
   .navbar-nav .nav-item .nav-link {
     font-size: 13.6px;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1366px) {
   .carousel-item h2,
   .carousel-item p,
   .carousel-item .boton {
@@ -267,7 +267,7 @@ html, body {
     height: auto;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1367px) {
   .navbar-brand img {
     width: 100px;
     height: auto;
@@ -276,19 +276,32 @@ html, body {
     font-size: 18px;
   }
 }
-@media (min-width: 1025px) and (max-width: 768px) {
+@media (min-width: 1367px) and (max-width: 768px) {
   .navbar-nav .nav-item .nav-link {
     font-size: 13.5px;
   }
 }
-@media (min-width: 1025px) and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 1367px) and (min-width: 769px) and (max-width: 1024px) {
   .navbar-nav .nav-item .nav-link {
     font-size: 15.3px;
   }
 }
-@media (min-width: 1025px) {
-  .carousel-item h2,
-  .carousel-item p,
+@media (min-width: 1367px) {
+  .carousel-item h1 {
+    font-size: 35px;
+    margin-top: -50px;
+    left: 750px;
+  }
+  .carousel-item h2 {
+    font-size: 35px;
+    margin-top: 180px;
+    left: 750px;
+  }
+  .carousel-item p {
+    font-size: 25px !important;
+    margin-top: 100px;
+    margin-top: -60px !important;
+  }
   .carousel-item .boton {
     font-size: 36px;
     margin-top: 200px;
