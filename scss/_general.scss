@@ -1,4 +1,4 @@
-@import 'mixins'; // Asegúrate de que los mixins están disponibles
+@import 'mixins'; 
 
 body {
   background: rgb(249,238,217);
@@ -59,8 +59,6 @@ body {
   color: rgb(150, 104, 44) !important;
   @extend %rounded;
 }
-
-
 
 .carousel-item img {
   width: 100%;
