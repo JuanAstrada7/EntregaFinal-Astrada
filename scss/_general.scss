@@ -244,15 +244,44 @@ body {
 #contacto {
   @extend %text-center;
   color: #fff;
+  padding: 2rem 0;
+}
+
+#contacto .col-md-4 {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #contacto h1 {
   @include font-family('Sevillana');
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 #contacto h2 {
   @include font-family('Sevillana');
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#contacto .form-control {
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  margin-left: 1rem;
+}
+
+#contacto .btn-primary {
+  background-color: rgba(75, 44, 3, 0.945); 
+  border-color: whitesmoke;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#contacto .btn-primary:hover {
+  background-color: rgb(58, 58, 57); 
+  border-color: burlywood;
 }
 
 #contacto address {
