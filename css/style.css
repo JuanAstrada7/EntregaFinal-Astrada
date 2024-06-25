@@ -11,11 +11,11 @@
   font-style: normal;
 }
 
-.footer, #contacto, .main-novedades, .grid-item, #sabores, .integrante, #historia h1, #historia h2, #historia, .main, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
+.footer, #contacto, .main-novedades, .grid-item, #sabores, .integrante, #historia h1, #historia h2, #historia, .main, .boton-redes, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   text-align: center;
 }
 
-.grid-item img, .grid-item, .imagen-pequeña, .imagen-grande, .boton2:hover, .boton2, .carousel-item img, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
+.grid-item img, .grid-item, .imagen-pequeña, .imagen-grande, .boton2:hover, .boton2, .carousel-item img, .boton-redes:hover, .boton-redes, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   border-radius: 5px;
 }
 
@@ -54,11 +54,11 @@ header {
   border-radius: 80%;
 }
 
-.footer, #contacto, .main-novedades, .grid-item, #sabores, .integrante, #historia h1, #historia h2, #historia, .main, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
+.footer, #contacto, .main-novedades, .grid-item, #sabores, .integrante, #historia h1, #historia h2, #historia, .main, .boton-redes, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   text-align: center;
 }
 
-.grid-item img, .grid-item, .imagen-pequeña, .imagen-grande, .boton2:hover, .boton2, .carousel-item img, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
+.grid-item img, .grid-item, .imagen-pequeña, .imagen-grande, .boton2:hover, .boton2, .carousel-item img, .boton-redes:hover, .boton-redes, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   border-radius: 5px;
 }
 
@@ -88,11 +88,11 @@ header {
   border-radius: 80%;
 }
 
-.footer, #contacto, .main-novedades, .grid-item, #sabores, .integrante, #historia h1, #historia h2, #historia, .main, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
+.footer, #contacto, .main-novedades, .grid-item, #sabores, .integrante, #historia h1, #historia h2, #historia, .main, .boton-redes, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   text-align: center;
 }
 
-.grid-item img, .grid-item, .imagen-pequeña, .imagen-grande, .boton2:hover, .boton2, .carousel-item img, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
+.grid-item img, .grid-item, .imagen-pequeña, .imagen-grande, .boton2:hover, .boton2, .carousel-item img, .boton-redes:hover, .boton-redes, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   border-radius: 5px;
 }
 
@@ -117,11 +117,11 @@ header {
   display: block;
 }
 
-.footer, #contacto, .main-novedades, .grid-item, #sabores, .integrante, #historia h1, #historia h2, #historia, .main, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
+.footer, #contacto, .main-novedades, .grid-item, #sabores, .integrante, #historia h1, #historia h2, #historia, .main, .boton-redes, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   text-align: center;
 }
 
-.grid-item img, .grid-item, .imagen-pequeña, .imagen-grande, .boton2:hover, .boton2, .carousel-item img, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
+.grid-item img, .grid-item, .imagen-pequeña, .imagen-grande, .boton2:hover, .boton2, .carousel-item img, .boton-redes:hover, .boton-redes, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   border-radius: 5px;
 }
 
@@ -195,12 +195,15 @@ html, body {
     margin-top: -35px !important;
   }
   .carousel-item .boton {
+    padding: 8px 16px;
     font-size: 18px;
     margin-top: 100px;
   }
-  .carousel-item .boton {
+  .carousel-item .boton-redes {
     padding: 8px 16px;
     font-size: 18px;
+    top: 33%;
+    left: 50%;
   }
   .grid-container {
     grid-template-columns: 1fr;
@@ -304,11 +307,15 @@ html, body {
   }
   .carousel-item .boton {
     font-size: 36px;
-    margin-top: 200px;
+    padding: 10px 20px;
+    top: 58%;
+    left: 50%;
   }
-  .carousel-item .boton {
-    padding: 15px 30px;
+  .carousel-item .boton-redes {
+    padding: 10px 20px;
     font-size: 24px;
+    top: 52%;
+    left: 50%;
   }
   .main .contenedor h2 {
     font-size: 32px;
@@ -341,11 +348,11 @@ html, body {
   position: absolute;
 }
 
-.footer, #contacto, .main-novedades, .grid-item, #sabores, .integrante, #historia h1, #historia h2, #historia, .main, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
+.footer, #contacto, .main-novedades, .grid-item, #sabores, .integrante, #historia h1, #historia h2, #historia, .main, .boton-redes, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   text-align: center;
 }
 
-.grid-item img, .grid-item, .imagen-pequeña, .imagen-grande, .boton2:hover, .boton2, .carousel-item img, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
+.grid-item img, .grid-item, .imagen-pequeña, .imagen-grande, .boton2:hover, .boton2, .carousel-item img, .boton-redes:hover, .boton-redes, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   border-radius: 5px;
 }
 
@@ -381,24 +388,37 @@ body {
 
 .boton {
   position: absolute;
-  top: 50%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-decoration: none;
   padding: 10px 20px;
   font-size: 24px;
-  color: rgb(39, 35, 35);
-  margin-top: 200px;
+  color: black;
+  margin-top: 150px;
   font-family: "Arial", sans-serif;
-  box-shadow: 0 4px 6px black;
-}
-
-.boton.redes {
-  color: white;
-  box-shadow: 0 4px 6px burlywood;
+  box-shadow: 0 6px 8px black;
 }
 
 .boton:hover {
+  color: rgba(75, 44, 3, 0.945);
+}
+
+.boton-redes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white !important;
+  margin-top: 180px;
+  font-family: "Arial", sans-serif;
+  box-shadow: 0 4px 6px burlywood;
+}
+
+.boton-redes:hover {
   color: rgb(150, 104, 44) !important;
 }
 

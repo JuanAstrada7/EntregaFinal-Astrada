@@ -68,13 +68,16 @@ html, body {
   }
 
   .carousel-item .boton {
+    padding: 8px 16px;
     font-size: 18px;
     margin-top: 100px;
   }
 
-  .carousel-item .boton {
+  .carousel-item .boton-redes {
     padding: 8px 16px;
     font-size: 18px;
+    top: 33%;
+    left: 50%;
   }
 
   .grid-container {
@@ -174,12 +177,16 @@ html, body {
 
   .carousel-item .boton {
     font-size: 36px;
-    margin-top: 200px;
+    padding: 10px 20px;
+    top: 58%;
+    left: 50%;
   }
 
-  .carousel-item .boton {
-    padding: 15px 30px;
+  .carousel-item .boton-redes {
+    padding: 10px 20px;
     font-size: 24px;
+    top: 52%;
+    left: 50%;
   }
 
   .main .contenedor h2 {

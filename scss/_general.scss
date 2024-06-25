@@ -36,26 +36,42 @@ body {
 
 .boton {
   position: absolute;
-  top: 50%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
   @extend %text-center;
   text-decoration: none;
   padding: 10px 20px;
   font-size: 24px;
-  color: rgb(39, 35, 35);
-  margin-top: 200px;
+  color: black;
+  margin-top: 150px;
   @include font-family('Arial');
-  @include box-shadow(0 4px 6px black);
+  @include box-shadow(0 6px 8px black);
   @extend %rounded;
 }
 
-.boton.redes {
-  color: white;
-  @include box-shadow(0 4px 6px burlywood);
+.boton:hover {
+  color: rgba(75, 44, 3, 0.945);
+  @extend %rounded;
 }
 
-.boton:hover {
+.boton-redes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @extend %text-center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white !important;
+  margin-top: 180px;
+  @include font-family('Arial');
+  @include box-shadow(0 4px 6px burlywood);
+  @extend %rounded;
+}
+
+.boton-redes:hover {
   color: rgb(150, 104, 44) !important;
   @extend %rounded;
 }
