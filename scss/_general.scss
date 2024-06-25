@@ -182,6 +182,24 @@ body {
   @include font-family('Sevillana');
 }
 
+.boton-compra {
+  display: inline-block;
+  background-color: burlywood; 
+  color: rgb(58, 58, 57); 
+  padding: 10px 20px; 
+  text-align: center;
+  text-decoration: none; 
+  border-radius: 5px;
+  font-weight: bold; 
+  transition: background-color 0.3s ease; 
+  margin-top: 20px;
+}
+
+.boton-compra:hover {
+  background-color: rgb(58, 58, 57); 
+  color: burlywood; 
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -190,7 +208,10 @@ body {
 }
 
 .grid-item {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #ccc;
+  justify-content: space-between;
   @extend %rounded;
   padding: 1rem;
   @extend %text-center;
@@ -201,6 +222,7 @@ body {
 .grid-item img {
   width: 100%;
   height: 181px;
+  border-radius: 8px;
   @extend %rounded;
 }
 
