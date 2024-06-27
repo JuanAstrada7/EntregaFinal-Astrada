@@ -160,7 +160,14 @@ body {
   @extend %text-center;
 }
 
-.imagen-grande {
+.imagen-ajustada {
+  width: 80%;
+  height: 50%;
+  object-fit: cover;
+  @extend %rounded;
+}
+
+/*.imagen-grande {
   grid-column: span 2;
   width: 80%;
   height: auto;
@@ -171,7 +178,7 @@ body {
   width: 80%;
   height: auto;
   @extend %rounded;
-}
+}*/
 
 .integrante h4 {
   margin: 10px 0 5px;

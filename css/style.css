@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-.grid-item img, .grid-item, .imagen-pequeña, .imagen-grande, .boton2:hover, .boton2, .carousel-item img, .boton-redes:hover, .boton-redes, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
+.grid-item img, .grid-item, .imagen-ajustada, .boton2:hover, .boton2, .carousel-item img, .boton-redes:hover, .boton-redes, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   border-radius: 5px;
 }
 
@@ -66,7 +66,7 @@ header {
   text-align: center;
 }
 
-.grid-item img, .grid-item, .imagen-pequeña, .imagen-grande, .boton2:hover, .boton2, .carousel-item img, .boton-redes:hover, .boton-redes, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
+.grid-item img, .grid-item, .imagen-ajustada, .boton2:hover, .boton2, .carousel-item img, .boton-redes:hover, .boton-redes, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   border-radius: 5px;
 }
 
@@ -100,7 +100,7 @@ header {
   text-align: center;
 }
 
-.grid-item img, .grid-item, .imagen-pequeña, .imagen-grande, .boton2:hover, .boton2, .carousel-item img, .boton-redes:hover, .boton-redes, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
+.grid-item img, .grid-item, .imagen-ajustada, .boton2:hover, .boton2, .carousel-item img, .boton-redes:hover, .boton-redes, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   border-radius: 5px;
 }
 
@@ -129,7 +129,7 @@ header {
   text-align: center;
 }
 
-.grid-item img, .grid-item, .imagen-pequeña, .imagen-grande, .boton2:hover, .boton2, .carousel-item img, .boton-redes:hover, .boton-redes, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
+.grid-item img, .grid-item, .imagen-ajustada, .boton2:hover, .boton2, .carousel-item img, .boton-redes:hover, .boton-redes, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   border-radius: 5px;
 }
 
@@ -337,7 +337,7 @@ html, body {
   text-align: center;
 }
 
-.grid-item img, .grid-item, .imagen-pequeña, .imagen-grande, .boton2:hover, .boton2, .carousel-item img, .boton-redes:hover, .boton-redes, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
+.grid-item img, .grid-item, .imagen-ajustada, .boton2:hover, .boton2, .carousel-item img, .boton-redes:hover, .boton-redes, .boton:hover, .boton, .carousel-item:nth-child(3) .carousel-text, .carousel-text {
   border-radius: 5px;
 }
 
@@ -481,17 +481,24 @@ body {
   font-family: "Playwrite NG Modern", sans-serif;
 }
 
-.imagen-grande {
+.imagen-ajustada {
+  width: 80%;
+  height: 50%;
+  object-fit: cover;
+}
+
+/*.imagen-grande {
   grid-column: span 2;
   width: 80%;
   height: auto;
+  @extend %rounded;
 }
 
 .imagen-pequeña {
   width: 80%;
   height: auto;
-}
-
+  @extend %rounded;
+}*/
 .integrante h4 {
   margin: 10px 0 5px;
 }
