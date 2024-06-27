@@ -2,15 +2,15 @@
 
 .navbar-brand {
   color: white !important;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   @include flex-center();
-  @include font-family('Sevillana');
+  @include font-family('Playwrite NG Modern');
 }
 
 .navbar a {
   color: white;
-  @include font-family('Arial, Helvetica');
+  @include font-family('Playwrite NG Modern');
 }
 
 .nav-link:hover {

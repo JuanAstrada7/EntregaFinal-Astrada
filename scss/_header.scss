@@ -12,7 +12,7 @@ header {
   font-size: $text-size-lg;
   font-weight: bold;
   @include flex-center();
-  font-family: $font-primary !important;
+  font-family: $font-primary ;
 }
 
 .navbar a {
