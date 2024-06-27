@@ -202,8 +202,7 @@ html, body {
   .carousel-item .boton-redes {
     padding: 8px 16px;
     font-size: 18px;
-    top: 37%;
-    left: 50%;
+    margin-top: 150px;
   }
   .grid-container {
     grid-template-columns: 1fr;
