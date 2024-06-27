@@ -72,7 +72,7 @@ header {
 
 .navbar-brand {
   color: white !important;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -143,28 +143,6 @@ html, body {
   overflow-x: hidden;
 }
 
-@media only screen and (min-width: 769px) {
-  header {
-    align-items: center;
-  }
-  header nav {
-    display: block;
-  }
-  header nav ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-  }
-  header nav ul li {
-    margin: 5px;
-  }
-  header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-family: "Playwrite NG Modern", sans-serif;
-  }
-}
 @media (max-width: 768px) {
   .navbar-brand img {
     width: 50px;
@@ -203,14 +181,14 @@ html, body {
     margin-top: -35px !important;
   }
   .carousel-item .boton {
-    padding: 8px 16px;
-    font-size: 18px;
-    margin-top: 150px;
+    padding: 10px 15px;
+    font-size: 20px;
+    margin-top: 90px;
   }
   .carousel-item .boton-redes {
-    padding: 8px 16px;
+    padding: 10px 15px;
     font-size: 18px;
-    bottom: 20px;
+    margin-top: 85px;
     left: 50%;
   }
   .grid-container {
@@ -395,7 +373,7 @@ body {
 }
 
 .carousel-item h2 {
-  font-size: 2rem;
+  font-size: 1, 5rem;
 }
 
 .boton {

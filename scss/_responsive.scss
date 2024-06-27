@@ -10,32 +10,7 @@ html, body {
   overflow-x: hidden;
 }
 
-@media only screen and (min-width: 769px) {
-  header {
-    align-items: center;
-  }
 
-  header nav {
-    display: block;
-  }
-
-  header nav ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-  }
-
-  header nav ul li {
-    margin: 5px;
-  }
-
-  header nav ul li a {
-    color: white;
-    text-decoration: none;
-    @include font-family('Playwrite NG Modern');
-  } 
-}
 
 @media (max-width: 768px) {
   .navbar-brand img {
@@ -68,15 +43,15 @@ html, body {
   }
 
   .carousel-item .boton {
-    padding: 8px 16px;
-    font-size: 18px;
-    margin-top: 150px;
+    padding: 10px 15px;
+    font-size: 20px;
+    margin-top: 90px;
   }
 
   .carousel-item .boton-redes {
-    padding: 8px 16px;
+    padding: 10px 15px;
     font-size: 18px;
-    bottom: 20px;
+    margin-top: 85px;
     left: 50%;
   }
 
@@ -160,7 +135,6 @@ html, body {
     font-size: 35px;
     margin-top: -50px;
     left: 750px;
-    
   }
 
   .carousel-item h2 {
