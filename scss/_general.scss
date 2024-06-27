@@ -27,9 +27,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   @extend %text-center;
-  margin-top: -80px;
-  font-size: 1rem;
-  padding: 5px;
+  margin-top: -70px !important;
+  font-size: 0,5rem;
+  padding: 2px;
   @extend %rounded;
   box-shadow: none !important;
 }
