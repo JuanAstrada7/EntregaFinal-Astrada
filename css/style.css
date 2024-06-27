@@ -394,6 +394,10 @@ body {
   box-shadow: none !important;
 }
 
+.carousel-item h2 {
+  font-size: xx-large;
+}
+
 .boton {
   position: absolute;
   top: 58%;
