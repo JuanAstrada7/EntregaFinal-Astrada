@@ -163,6 +163,10 @@ html, body {
   }
 }
 @media (max-width: 768px) {
+  .carousel-item:nth-child(3) .carousel-text {
+    margin-top: -80px;
+    font-size: 1rem;
+  }
   .carousel-item h1 {
     font-size: 18px;
     margin-top: -50px;
@@ -182,7 +186,7 @@ html, body {
   .carousel-item .boton {
     padding: 10px 15px;
     font-size: 15px;
-    margin-top: 115px;
+    margin-top: 110px;
   }
   .carousel-item .boton-redes {
     padding: 10px 15px;
