@@ -171,8 +171,7 @@ html, body {
   .carousel-item h2 {
     font-size: 18px;
     margin-top: 100px;
-    font-size: 18px;
-    margin-top: 100px;
+    font-size: 15px;
     left: 40px;
   }
   .carousel-item p {
@@ -183,7 +182,7 @@ html, body {
   .carousel-item .boton {
     padding: 10px 15px;
     font-size: 15px;
-    margin-top: 120px;
+    margin-top: 115px;
   }
   .carousel-item .boton-redes {
     padding: 10px 15px;
