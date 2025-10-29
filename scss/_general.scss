@@ -14,26 +14,42 @@
   font-family: $font-secondary;
   @include box-shadow(0 4px 6px $color-accent);
   border-radius: 12px;
-    border: 1px solid $color-primary;
-    border-radius: 12px;
-    padding: 1rem;
-    text-align: center;
-    background-color: $color-secondary;
-    @include box-shadow(0 4px 6px $color-accent);
-}    
+}
 .carousel-text {
   position: absolute;
   top: 32%;
   left: 33%;
   transform: translate(-50%, -50%);
-  text-align: center; // Added to replace @extend %text-center
+  text-align: center;
   font-size: 2rem;
   color: $color-primary;
   font-family: $font-primary;
   @include box-shadow(0 2px 4px $color-accent);
   padding: 10px;
   background-color: rgba(232, 180, 184, 0.7); /* rosa pastel translúcido */
-  border-radius: 12px; // Added to replace @extend %rounded
+  border-radius: 12px;
+
+body {
+  background: rgb(249,238,217);
+  background: linear-gradient(63deg, rgba(17,16,16,1) 0%, rgb(58, 58, 57) 100%);
+  @include font-family('Arial');
+  line-height: 1.6;
+}
+
+.carousel-text {
+  position:absolute;
+  top: 32%; 
+  left: 33%;
+  transform: translate(-50%, -50%);
+  @extend %text-center;
+  font-size: 2rem; 
+  color: #f7f6e7;
+  @include font-family('Playwrite NG Modern');
+  @include box-shadow(0 2px 4px white);
+  padding: 10px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  @extend %rounded;
+>>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
 }
 
 .carousel-item:nth-child(3) .carousel-text{
@@ -41,6 +57,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   @extend %text-center;
+<<<<<<< HEAD
   margin-top: -80px;
     background: $color-primary;
     color: $color-text;
@@ -48,11 +65,29 @@
     text-align: center;
 
 // ...existing code...
+=======
+  margin-top: -70px !important;
+  font-size: 0,5rem;
+  padding: 2px;
+  @extend %rounded;
+  box-shadow: none !important;
+}
+
+.carousel-item h2 {
+  font-size: 1,5rem;
+}
+
+.boton {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+>>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
   transform: translate(-50%, -50%);
   @extend %text-center;
   text-decoration: none;
   padding: 10px 20px;
   font-size: 24px;
+<<<<<<< HEAD
   color: rgb(39, 35, 35);
   margin-top: 200px;
   @include font-family('Arial');
@@ -71,6 +106,40 @@
 }
 
 
+=======
+  color: black;
+  margin-top: 150px;
+  @include font-family('Arial');
+  @include box-shadow(0 6px 8px black);
+  @extend %rounded;
+}
+
+.boton:hover {
+  color: rgba(75, 44, 3, 0.945);
+  @extend %rounded;
+}
+
+.boton-redes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @extend %text-center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white !important;
+  margin-top: 180px;
+  @include font-family('Arial');
+  @include box-shadow(0 4px 6px burlywood);
+  @extend %rounded;
+}
+
+.boton-redes:hover {
+  color: rgb(150, 104, 44) !important;
+  @extend %rounded;
+}
+>>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
 
 .carousel-item img {
   width: 100%;
@@ -97,6 +166,7 @@
 }
 
 .main h3 {
+<<<<<<< HEAD
   color: $color-primary;
   font-size: 3rem;
   margin-bottom: 20px;
@@ -105,11 +175,25 @@
 
 .main p {
   color: $color-text;
+=======
+  color: #fff ;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  @include font-family('Playwrite NG Modern');
+}
+
+.main p {
+  color: #fff;
+>>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
   margin-bottom: 20px;
 }
 
 .main a {
+<<<<<<< HEAD
   color: $color-primary;
+=======
+  color: #fff;
+>>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
 }
 
 .boton2 {
@@ -152,6 +236,7 @@
   @extend %text-center;
 }
 
+<<<<<<< HEAD
 .imagen-grande {
   grid-column: span 2;
   width: 80%;
@@ -163,6 +248,16 @@
   width: 80%;
   height: auto;
   @extend %rounded;
+=======
+.imagen-ajustada {
+  width: 80%;
+  height: 50%;
+  object-fit: cover;
+  @extend %rounded;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+>>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
 }
 
 .integrante h4 {
@@ -194,6 +289,27 @@
   @include font-family('Playwrite NG Modern');
 }
 
+<<<<<<< HEAD
+=======
+.boton-compra {
+  display: inline-block;
+  background-color: burlywood; 
+  color: rgb(58, 58, 57); 
+  padding: 10px 20px; 
+  text-align: center;
+  text-decoration: none; 
+  border-radius: 5px;
+  font-weight: bold; 
+  transition: background-color 0.3s ease; 
+  margin-top: 20px;
+}
+
+.boton-compra:hover {
+  background-color: rgb(58, 58, 57); 
+  color: burlywood; 
+}
+
+>>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -202,7 +318,14 @@
 }
 
 .grid-item {
+<<<<<<< HEAD
   border: 1px solid #ccc;
+=======
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  justify-content: space-between;
+>>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
   @extend %rounded;
   padding: 1rem;
   @extend %text-center;
@@ -213,6 +336,10 @@
 .grid-item img {
   width: 100%;
   height: 181px;
+<<<<<<< HEAD
+=======
+  border-radius: 8px;
+>>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
   @extend %rounded;
 }
 
@@ -256,20 +383,63 @@
 #contacto {
   @extend %text-center;
   color: #fff;
+<<<<<<< HEAD
+=======
+  padding: 2rem 0;
+}
+
+#contacto .col-md-4 {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+>>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
 }
 
 #contacto h1 {
   @include font-family('Playwrite NG Modern');
+<<<<<<< HEAD
+=======
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+>>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
 }
 
 #contacto h2 {
   @include font-family('Playwrite NG Modern');
+<<<<<<< HEAD
   font-size: 3rem;
+=======
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#contacto .form-control {
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  margin-left: 1rem;
+}
+
+#contacto .btn-primary {
+  background-color: rgba(75, 44, 3, 0.945); 
+  border-color: whitesmoke;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#contacto .btn-primary:hover {
+  background-color: rgb(58, 58, 57); 
+  border-color: burlywood;
+>>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
 }
 
 #contacto address {
   @include font-family('Playwrite NG Modern');
+<<<<<<< HEAD
   font-size: x-large;
+=======
+  font-size: large;
+>>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
 }
 
 .whatsapp img {
@@ -304,4 +474,8 @@
 
 .texto p {
   font-size: 14px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29

@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 @import 'mixins'; // Asegúrate de que los mixins están disponibles
 
 .navbar-brand {
   color: white !important;
   font-size: 30px;
+=======
+@import 'mixins'; 
+
+.navbar-brand {
+  color: white !important;
+  font-size: 20px;
+>>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
   font-weight: bold;
   @include flex-center();
   @include font-family('Playwrite NG Modern');
