@@ -1,25 +1,39 @@
 @import 'mixins'; // Asegúrate de que los mixins están disponibles
 
-body {
-  background: rgb(249,238,217);
-  background: linear-gradient(63deg, rgba(17,16,16,1) 0%, rgb(58, 58, 57) 100%);
-  @include font-family('Arial');
-  line-height: 1.6;
-}
-
+.boton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  color: $color-text;
+  background-color: $color-primary;
+  margin-top: 200px;
+  font-family: $font-secondary;
+  @include box-shadow(0 4px 6px $color-accent);
+  border-radius: 12px;
+    border: 1px solid $color-primary;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    background-color: $color-secondary;
+    @include box-shadow(0 4px 6px $color-accent);
+}    
 .carousel-text {
-  position:absolute;
-  top: 32%; 
+  position: absolute;
+  top: 32%;
   left: 33%;
   transform: translate(-50%, -50%);
-  @extend %text-center;
-  font-size: 2rem; 
-  color: #f7f6e7;
-  @include font-family('Playwrite NG Modern');
-  @include box-shadow(0 2px 4px white);
-  padding: 10px; 
-  background-color: rgba(0, 0, 0, 0.5); 
-  @extend %rounded;
+  text-align: center; // Added to replace @extend %text-center
+  font-size: 2rem;
+  color: $color-primary;
+  font-family: $font-primary;
+  @include box-shadow(0 2px 4px $color-accent);
+  padding: 10px;
+  background-color: rgba(232, 180, 184, 0.7); /* rosa pastel translúcido */
+  border-radius: 12px; // Added to replace @extend %rounded
 }
 
 .carousel-item:nth-child(3) .carousel-text{
@@ -28,16 +42,12 @@ body {
   transform: translate(-50%, -50%);
   @extend %text-center;
   margin-top: -80px;
-  font-size: 1rem;
-  padding: 5px;
-  @extend %rounded;
-  box-shadow: none !important;
-}
+    background: $color-primary;
+    color: $color-text;
+    padding: 20px 0;
+    text-align: center;
 
-.boton {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+// ...existing code...
   transform: translate(-50%, -50%);
   @extend %text-center;
   text-decoration: none;
@@ -87,19 +97,19 @@ body {
 }
 
 .main h3 {
-  color: #fff ;
+  color: $color-primary;
   font-size: 3rem;
   margin-bottom: 20px;
-  @include font-family('Playwrite NG Modern');
+  font-family: $font-primary;
 }
 
 .main p {
-  color: #fff;
+  color: $color-text;
   margin-bottom: 20px;
 }
 
 .main a {
-  color: #fff;
+  color: $color-primary;
 }
 
 .boton2 {
