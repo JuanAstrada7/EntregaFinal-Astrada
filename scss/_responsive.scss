@@ -1,16 +1,16 @@
-@import 'mixins'; 
+@import 'mixins';
 
 * {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-<<<<<<< HEAD
 @media only screen and (min-width: 769px) {
   header {
     align-items: center;
@@ -35,11 +35,9 @@ html, body {
     color: white;
     text-decoration: none;
     @include font-family('Arial, Playwrite NG Modern');
-  } 
+  }
 }
 
-=======
->>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
 @media (max-width: 768px) {
   .navbar-brand img {
     width: 50px;
@@ -55,7 +53,7 @@ html, body {
     margin-top: -50px;
     left: 40px;
   }
-<<<<<<< HEAD
+
   .carousel-item h2 {
     font-size: 18px;
     margin-top: 100px;
@@ -63,7 +61,6 @@ html, body {
     margin-top: 100px;
     left: 40px;
   }
-=======
 
   .carousel-item h2 {
     font-size: 18px;
@@ -72,13 +69,12 @@ html, body {
     left: 40px;
   }
 
->>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
   .carousel-item p {
     font-size: 18px;
     margin-top: 100px;
     margin-top: -35px !important;
   }
-<<<<<<< HEAD
+
   .carousel-item .boton {
     font-size: 18px;
     margin-top: 100px;
@@ -87,118 +83,109 @@ html, body {
   .carousel-item .boton {
     padding: 8px 16px;
     font-size: 18px;
-=======
 
-  .carousel-item .boton {
-    padding: 10px 15px;
-    font-size: 15px;
-    margin-top: 110px;
+    .carousel-item .boton {
+      padding: 10px 15px;
+      font-size: 15px;
+      margin-top: 110px;
+    }
+
+    .carousel-item .boton-redes {
+      padding: 10px 15px;
+      font-size: 15px;
+      margin-top: 130px;
+      left: 50%;
+    }
+
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+
+    .main .contenedor h2 {
+      font-size: 24px;
+    }
+
+    .main .contenedor p,
+    .main .contenedor .boton {
+      font-size: 14px;
+    }
+
+    .whatsapp img {
+      width: 50px;
+      height: auto;
+    }
+
+    .footer .redes img {
+      width: 30px;
+      height: auto;
+    }
   }
 
-  .carousel-item .boton-redes {
-    padding: 10px 15px;
-    font-size: 15px;
-    margin-top: 130px;
-    left: 50%;
->>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
+  @media (min-width: 769px) and (max-width: 1366px) {
+    .navbar-brand img {
+      width: 75px;
+      height: auto;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+      @include responsive-font(16px);
+    }
+
+    .carousel-item h2,
+    .carousel-item p,
+    .carousel-item .boton {
+      font-size: 24px;
+      margin-top: 150px;
+    }
+
+    .carousel-item .boton {
+      padding: 10px 20px;
+      font-size: 20px;
+    }
+
+    .main .contenedor h2 {
+      font-size: 28px;
+    }
+
+    .main .contenedor p,
+    .main .contenedor .boton {
+      font-size: 18px;
+    }
+
+    .whatsapp img {
+      width: 75px;
+      height: auto;
+    }
+
+    .footer .redes img {
+      width: 40px;
+      height: auto;
+    }
   }
 
-  .grid-container {
-    grid-template-columns: 1fr;
+  @media (min-width: 1367px) {
+    .navbar-brand img {
+      width: 100px;
+      height: auto;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+      @include responsive-font(18px);
+    }
+
+    .carousel-item h1 {
+      font-size: 35px;
+      margin-top: -50px;
+      left: 750px;
+    }
   }
 
-  .main .contenedor h2 {
-    font-size: 24px;
-  }
-
-  .main .contenedor p,
-  .main .contenedor .boton {
-    font-size: 14px;
-  }
-
-  .whatsapp img {
-    width: 50px;
-    height: auto;
-  }
-
-  .footer .redes img {
-    width: 30px;
-    height: auto;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1366px) {
-  .navbar-brand img {
-    width: 75px;
-    height: auto;
-  }
-
-  .navbar-nav .nav-item .nav-link {
-    @include responsive-font(16px);
-  }
-
-  .carousel-item h2,
-  .carousel-item p,
-  .carousel-item .boton {
-    font-size: 24px;
-    margin-top: 150px;
-  }
-
-  .carousel-item .boton {
-    padding: 10px 20px;
-    font-size: 20px;
-  }
-
-  .main .contenedor h2 {
-    font-size: 28px;
-  }
-
-  .main .contenedor p,
-  .main .contenedor .boton {
-    font-size: 18px;
-  }
-
-  .whatsapp img {
-    width: 75px;
-    height: auto;
-  }
-
-  .footer .redes img {
-    width: 40px;
-    height: auto;
-  }
-}
-
-@media (min-width: 1367px) {
-  .navbar-brand img {
-    width: 100px;
-    height: auto;
-  }
-
-  .navbar-nav .nav-item .nav-link {
-    @include responsive-font(18px);
-  }
-
-  .carousel-item h1 {
-    font-size: 35px;
-    margin-top: -50px;
-    left: 750px;
-<<<<<<< HEAD
-    
-  }
-=======
-  }
-
->>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
   .carousel-item h2 {
     font-size: 35px;
     margin-top: 180px;
     left: 750px;
   }
-<<<<<<< HEAD
-=======
 
->>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
   .carousel-item p {
     font-size: 25px !important;
     margin-top: 100px;
@@ -207,14 +194,12 @@ html, body {
 
   .carousel-item .boton {
     font-size: 36px;
-<<<<<<< HEAD
     margin-top: 200px;
   }
 
   .carousel-item .boton {
     padding: 15px 30px;
     font-size: 24px;
-=======
     padding: 10px 20px;
     top: 58%;
     left: 50%;
@@ -225,7 +210,6 @@ html, body {
     font-size: 24px;
     top: 52%;
     left: 50%;
->>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
   }
 
   .main .contenedor h2 {
@@ -254,10 +238,7 @@ html, body {
   position: relative;
   height: 0;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> a9a9c60137d9e9a02b9ca97abcea0f7a324f4a29
 .map-responsive iframe {
   left: 0;
   top: 0;

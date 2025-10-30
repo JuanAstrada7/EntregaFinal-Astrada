@@ -1,137 +1,11 @@
-@import 'mixins'; // Asegúrate de que los mixins están disponibles
 
-.boton {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-decoration: none;
-  padding: 10px 20px;
-  font-size: 24px;
+@import 'mixins';
+
+body {
+  background: $color-background;
   color: $color-text;
-  background-color: $color-primary;
-  margin-top: 200px;
   font-family: $font-secondary;
-  @include box-shadow(0 4px 6px $color-accent);
-  border-radius: 12px;
-}
-
-.carousel-text {
-  position: absolute;
-  top: 32%;
-  left: 33%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 2rem;
-  color: $color-primary;
-  font-family: $font-primary;
-  @include box-shadow(0 2px 4px $color-accent);
-  padding: 10px;
-  background-color: rgba(232, 180, 184, 0.7);
-  /* rosa pastel translúcido */
-  border-radius: 12px;
-
-  body {
-    background: rgb(249, 238, 217);
-    background: linear-gradient(63deg, rgba(17, 16, 16, 1) 0%, rgb(58, 58, 57) 100%);
-    @include font-family('Arial');
-    line-height: 1.6;
-  }
-
-  .carousel-text {
-    position: absolute;
-    top: 32%;
-    left: 33%;
-    transform: translate(-50%, -50%);
-    @extend %text-center;
-    font-size: 2rem;
-    color: #f7f6e7;
-    @include font-family('Playwrite NG Modern');
-    @include box-shadow(0 2px 4px white);
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    @extend %rounded;
-  }
-
-  .carousel-item:nth-child(3) .carousel-text {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    @extend %text-center;
-    margin-top: -80px;
-    background: $color-primary;
-    color: $color-text;
-    padding: 20px 0;
-    text-align: center;
-    top: 58%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-    @extend %text-center;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 24px;
-
-    color: rgb(39, 35, 35);
-    margin-top: 200px;
-    @include font-family('Arial');
-    @include box-shadow(0 4px 6px black);
-    @extend %rounded;
-  }
-
-  .boton.redes {
-    color: white;
-    @include box-shadow(0 4px 6px burlywood);
-  }
-
-  .boton:hover {
-    color: rgb(150, 104, 44) !important;
-    @extend %rounded;
-  }
-
-  color: black;
-  margin-top: 150px;
-  @include font-family('Arial');
-  @include box-shadow(0 6px 8px black);
-  @extend %rounded;
-}
-
-.boton:hover {
-  color: rgba(75, 44, 3, 0.945);
-  @extend %rounded;
-}
-
-.boton-redes {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  @extend %text-center;
-  text-decoration: none;
-  padding: 10px 20px;
-  font-size: 20px;
-  color: white !important;
-  margin-top: 180px;
-  @include font-family('Arial');
-  @include box-shadow(0 4px 6px burlywood);
-  @extend %rounded;
-}
-
-.boton-redes:hover {
-  color: rgb(150, 104, 44) !important;
-  @extend %rounded;
-}
-
-.carousel-item img {
-  width: 100%;
-  max-width: 550px;
-  padding: 20px;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border: 2px solid gray;
-  @extend %rounded;
-  box-sizing: border-box;
+  line-height: 1.6;
 }
 
 .container {
@@ -141,207 +15,148 @@
 }
 
 .main {
-  background-color: hsla(43, 32%, 22%, 0.952);
-  padding: 50px 0;
+  background-color: $color-primary;
+  padding: 48px 0;
   @extend %text-center;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(232, 180, 184, 0.15);
 }
 
 .main h3 {
-  color: $color-primary;
-  font-size: 3rem;
-  margin-bottom: 20px;
+  color: $color-secondary;
+  font-size: 2.5rem;
+  margin-bottom: 18px;
   font-family: $font-primary;
 }
 
 .main p {
   color: $color-text;
-  color: #fff;
-  font-size: 3rem;
-  margin-bottom: 20px;
-  @include font-family('Playwrite NG Modern');
-}
-
-.main p {
-  color: #fff;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+  font-family: $font-secondary;
 }
 
 .main a {
-
-  color: $color-primary;
-  color: #fff;
-
-}
-
-.boton2 {
-  text-decoration: none;
-  padding: 10px 20px;
-  @include box-shadow(0 4px 6px burlywood);
-  @extend %rounded;
-}
-
-.boton2:hover {
-  color: rgba(216, 148, 60, 0.945) !important;
-  @extend %rounded;
-}
-
-#historia {
-  padding: 20px;
-  color: white;
-  @extend %text-center;
-}
-
-body {
-  background: $color-background;
-  color: $color-text;
-  font-family: $font-secondary;
-  line-height: 1.6;
-}
-
-@include font-family('Playwrite NG Modern');
-
-.boton-compra {
-  display: inline-block;
-  background-color: burlywood;
-  color: rgb(58, 58, 57);
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
+  color: $color-accent;
   font-weight: bold;
-  transition: background-color 0.3s ease;
-  margin-top: 20px;
+  text-decoration: none;
 }
 
-.boton-compra:hover {
-  background-color: rgb(58, 58, 57);
-  color: burlywood;
+.boton, .boton2, .boton-compra {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  color: $color-background;
+  background-color: $color-accent;
+  border-radius: 8px;
+  font-family: $font-secondary;
+  box-shadow: 0 2px 6px rgba(212, 175, 55, 0.15);
+  border: none;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  margin-top: 12px;
+}
+
+.boton:hover, .boton2:hover, .boton-compra:hover {
+  background-color: $color-secondary;
+  color: $color-text;
+  box-shadow: 0 4px 12px rgba(232, 180, 184, 0.25);
+}
+
+.carousel-text {
+  position: absolute;
+  top: 32%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2rem;
+  color: $color-text;
+  font-family: $font-primary;
+  background-color: rgba(232, 180, 184, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(232, 180, 184, 0.15);
+  padding: 10px 24px;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  padding: 1.2rem;
 }
 
 .grid-item {
-
-  border: 1px solid #ccc;
-
   display: flex;
   flex-direction: column;
-  border: 1px solid #ccc;
   justify-content: space-between;
+  align-items: center;
+  background-color: $color-background;
+  border: 1px solid $color-border;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(232, 180, 184, 0.10);
+  padding: 1.2rem;
+  transition: box-shadow 0.3s;
+}
 
-  @extend %rounded;
-  padding: 1rem;
-  @extend %text-center;
-  background-color: #f9f9f9;
-  @include box-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+.grid-item:hover {
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.18);
 }
 
 .grid-item img {
   width: 100%;
-  height: 181px;
+  height: 180px;
+  object-fit: cover;
   border-radius: 8px;
-  @extend %rounded;
+  margin-bottom: 10px;
 }
 
 .grid-item p {
-  margin: 10px 0;
+  margin: 8px 0;
+  color: $color-text;
+  font-family: $font-secondary;
+  font-size: 1rem;
 }
 
-.main-novedades {
-  background-color: #333;
-  color: #fff;
-  padding: 12% 0;
+#historia, #contacto, .main-novedades {
   @extend %text-center;
-}
-
-.main-novedades {
-  .contenedor {
-    h1 {
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-    }
-
-    img {
-      animation: bounce 2s infinite;
-      margin-top: 20px;
-    }
-  }
-}
-
-@keyframes bounce {
-
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.2);
-  }
-}
-
-#contacto {
-  @extend %text-center;
-  color: #fff;
+  color: $color-text;
   padding: 2rem 0;
 }
 
 #contacto .col-md-4 {
   padding: 2rem;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(232, 180, 184, 0.10);
+  background: $color-background;
 }
 
-#contacto h1 {
-  @include font-family('Playwrite NG Modern');
+#contacto h1, #contacto h2 {
+  font-family: $font-primary;
   font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-#contacto h2 {
-  @include font-family('Playwrite NG Modern');
-
-  font-size: 3rem;
-
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 #contacto .form-control {
   border-radius: 0.25rem;
-  border: 1px solid #ced4da;
+  border: 1px solid $color-border;
   margin-left: 1rem;
 }
 
 #contacto .btn-primary {
-  background-color: rgba(75, 44, 3, 0.945);
-  border-color: whitesmoke;
+  background-color: $color-accent;
+  border-color: $color-border;
   border-radius: 0.25rem;
   padding: 0.5rem 1.5rem;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 #contacto .btn-primary:hover {
-  background-color: rgb(58, 58, 57);
-  border-color: burlywood;
-
+  background-color: $color-secondary;
+  border-color: $color-accent;
 }
 
 #contacto address {
-  @include font-family('Playwrite NG Modern');
-
-  font-size: x-large;
-
-  font-size: large;
-
+  font-family: $font-secondary;
+  font-size: 1.1rem;
 }
 
 .whatsapp img {
@@ -350,31 +165,31 @@ body {
   bottom: 40px;
   width: 50px;
   height: auto;
-  transition: 2s;
+  transition: 0.6s;
+}
 
-  &:hover {
-    transform: rotate(360deg);
-  }
+.whatsapp img:hover {
+  transform: rotate(360deg) scale(1.1);
 }
 
 .footer {
-  background: rgb(249, 238, 217);
-  background: linear-gradient(63deg, rgba(17, 16, 16, 1) 0%, rgb(58, 58, 57) 100%);
-  color: #fff;
+  background: linear-gradient(63deg, $color-primary 0%, $color-secondary 100%);
+  color: $color-text;
   padding: 20px 0;
   @extend %text-center;
+  border-top: 1px solid $color-border;
 }
 
 .redes {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .redes a {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 8px;
 }
 
 .texto p {
   font-size: 14px;
-
+  color: $color-text;
 }
