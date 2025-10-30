@@ -78,47 +78,36 @@ body {
   .carousel-item .boton {
     font-size: 18px;
     margin-top: 100px;
-  }
-
-  .carousel-item .boton {
     padding: 8px 16px;
-    font-size: 18px;
-
-    .carousel-item .boton {
-      padding: 10px 15px;
-      font-size: 15px;
-      margin-top: 110px;
-    }
-
-    .carousel-item .boton-redes {
-      padding: 10px 15px;
-      font-size: 15px;
-      margin-top: 130px;
-      left: 50%;
-    }
-
-    .grid-container {
-      grid-template-columns: 1fr;
-    }
-
-    .main .contenedor h2 {
-      font-size: 24px;
-    }
-
-    .main .contenedor p,
-    .main .contenedor .boton {
-      font-size: 14px;
-    }
-
-    .whatsapp img {
-      width: 50px;
-      height: auto;
-    }
-
-    .footer .redes img {
-      width: 30px;
-      height: auto;
-    }
+  }
+  .carousel-item .boton {
+    padding: 10px 15px;
+    font-size: 15px;
+    margin-top: 110px;
+  }
+  .carousel-item .boton-redes {
+    padding: 10px 15px;
+    font-size: 15px;
+    margin-top: 130px;
+    left: 50%;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .main .contenedor h2 {
+    font-size: 24px;
+  }
+  .main .contenedor p,
+  .main .contenedor .boton {
+    font-size: 14px;
+  }
+  .whatsapp img {
+    width: 50px;
+    height: auto;
+  }
+  .footer .redes img {
+    width: 30px;
+    height: auto;
   }
 
   @media (min-width: 769px) and (max-width: 1366px) {

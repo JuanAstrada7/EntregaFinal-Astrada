@@ -1,9 +1,6 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NG+Modern:wght@100..400&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -30,54 +27,8 @@
   font-variation-settings: "wdth" 100;
 }
 
-.footer,
-#contacto,
-.main-novedades,
-.grid-item,
-#sabores,
-.integrante,
-#historia h1,
-#historia h2,
-#historia,
-.main,
-.boton,
-.carousel-item:nth-child(3) .carousel-text,
-.carousel-text {
+.footer, #historia, #contacto, .main-novedades, .main {
   text-align: center;
-}
-
-.grid-item img {
-  border-radius: 5px;
-}
-
-.footer,
-#contacto,
-.main-novedades,
-.grid-item,
-#sabores,
-.integrante,
-#historia h1,
-#historia h2,
-#historia,
-.main,
-.boton-redes,
-.boton,
-.carousel-item:nth-child(3) .carousel-text,
-.carousel-text {
-  text-align: center;
-}
-
-.imagen-ajustada,
-.boton2:hover,
-.boton2,
-.carousel-item img,
-.boton-redes:hover,
-.boton-redes,
-.boton:hover,
-.boton {
-  border-radius: 5px;
-
-  border-radius: 5px;
 }
 
 header {
@@ -85,12 +36,12 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(75, 44, 3, 0.945);
-  border-bottom: 1px solid gray;
+  background-color: #e8b4b8;
+  border-bottom: 1px solid #e8b4b8;
 }
 
 .navbar-brand {
-  color: #fff !important;
+  color: #6e4c2b !important;
   font-size: 24px;
   font-weight: bold;
   display: flex;
@@ -100,12 +51,12 @@ header {
 }
 
 .navbar a {
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #6e4c2b;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .nav-link:hover {
-  color: burlywood;
+  color: #f7cac9;
 }
 
 .navbar-brand img {
@@ -115,959 +66,499 @@ header {
   border-radius: 80%;
 }
 
-.footer,
-#contacto,
-.main-novedades,
-.grid-item,
-#sabores,
-.integrante,
-#historia h1,
-#historia h2,
-#historia,
-.main,
-.boton,
-.carousel-item:nth-child(3) .carousel-text,
-.carousel-text {
+.footer, #historia, #contacto, .main-novedades, .main {
   text-align: center;
 }
 
-.grid-item img,
-.grid-item,
-.imagen-pequeña,
-.imagen-grande,
-.boton2:hover,
-.boton2,
-.carousel-item img,
-.boton:hover,
-.boton,
-.carousel-item:nth-child(3) .carousel-text,
-.carousel-text {
+.navbar-brand {
+  color: white !important;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Playwrite NG Modern", sans-serif;
+}
 
-  .footer,
-  #contacto,
-  .main-novedades,
-  .grid-item,
-  #sabores,
-  .integrante,
-  #historia h1,
-  #historia h2,
-  #historia,
-  .main,
-  .boton-redes,
-  .boton,
-  .carousel-item:nth-child(3) .carousel-text,
-  .carousel-text {
-    text-align: center;
-  }
+.navbar a {
+  color: white;
+  font-family: "Playwrite NG Modern", sans-serif;
+}
 
-  .grid-item img,
-  .grid-item,
-  .imagen-ajustada,
-  .boton2:hover,
-  .boton2,
-  .carousel-item img,
-  .boton-redes:hover,
-  .boton-redes,
-  .boton:hover,
-  .boton,
-  .carousel-item:nth-child(3) .carousel-text,
-  .carousel-text {
+.nav-link:hover {
+  color: burlywood;
+}
 
-    border-radius: 5px;
-  }
+.navbar-brand img {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 80%;
+}
 
-  .navbar-brand {
-    color: white !important;
-    font-size: 30px;
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
+.footer, #historia, #contacto, .main-novedades, .main {
+  text-align: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: rgba(75, 44, 3, 0.945);
+  box-shadow: 0 8px 16px whitesmoke;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 1000;
+}
+
+.dropdown-item:hover {
+  background-color: burlywood;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.footer, #historia, #contacto, .main-novedades, .main {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@media only screen and (min-width: 769px) {
+  header {
     align-items: center;
-    font-family: "Playwrite NG Modern", sans-serif;
   }
-
-  .navbar a {
+  header nav {
+    display: block;
+  }
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  header nav ul li {
+    margin: 5px;
+  }
+  header nav ul li a {
     color: white;
-    font-family: "Playwrite NG Modern", sans-serif;
-  }
-
-  .nav-link:hover {
-    color: burlywood;
-  }
-
-  .navbar-brand img {
-    width: 80px;
-    height: auto;
-    margin-right: 10px;
-    border-radius: 80%;
-  }
-
-  .footer,
-  #contacto,
-  .main-novedades,
-  .grid-item,
-  #sabores,
-  .integrante,
-  #historia h1,
-  #historia h2,
-  #historia,
-  .main,
-  .boton,
-  .carousel-item:nth-child(3) .carousel-text,
-  .carousel-text {
-    text-align: center;
-  }
-
-  .grid-item img,
-  .grid-item,
-  .imagen-pequeña,
-  .imagen-grande,
-  .boton2:hover,
-  .boton2,
-  .carousel-item img,
-  .boton:hover,
-  .boton,
-  .carousel-item:nth-child(3) .carousel-text,
-  .carousel-text {
-
-    .footer,
-    #contacto,
-    .main-novedades,
-    .grid-item,
-    #sabores,
-    .integrante,
-    #historia h1,
-    #historia h2,
-    #historia,
-    .main,
-    .boton-redes,
-    .boton,
-    .carousel-item:nth-child(3) .carousel-text,
-    .carousel-text {
-      text-align: center;
-    }
-
-    .grid-item img,
-    .grid-item,
-    .imagen-ajustada,
-    .boton2:hover,
-    .boton2,
-    .carousel-item img,
-    .boton-redes:hover,
-    .boton-redes,
-    .boton:hover,
-    .boton,
-    .carousel-item:nth-child(3) .carousel-text,
-    .carousel-text {
-
-      border-radius: 5px;
-    }
-
-    .dropdown-menu {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      display: none;
-      background-color: rgba(75, 44, 3, 0.945);
-      box-shadow: 0 8px 16px whitesmoke;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      z-index: 1000;
-    }
-
-    .dropdown-item:hover {
-      background-color: burlywood;
-    }
-
-    .nav-item:hover .dropdown-menu {
-      display: block;
-    }
-
-    .footer,
-    #contacto,
-    .main-novedades,
-    .grid-item,
-    #sabores,
-    .integrante,
-    #historia h1,
-    #historia h2,
-    #historia,
-    .main,
-    .boton,
-    .carousel-item:nth-child(3) .carousel-text,
-    .carousel-text {
-      text-align: center;
-    }
-
-    .grid-item img,
-    .grid-item,
-    .imagen-pequeña,
-    .imagen-grande,
-    .boton2:hover,
-    .boton2,
-    .carousel-item img,
-    .boton:hover,
-    .boton,
-    .carousel-item:nth-child(3) .carousel-text,
-    .carousel-text {
-
-      .footer,
-      #contacto,
-      .main-novedades,
-      .grid-item,
-      #sabores,
-      .integrante,
-      #historia h1,
-      #historia h2,
-      #historia,
-      .main,
-      .boton-redes,
-      .boton,
-      .carousel-item:nth-child(3) .carousel-text,
-      .carousel-text {
-        text-align: center;
-      }
-
-      .grid-item img,
-      .grid-item,
-      .imagen-ajustada,
-      .boton2:hover,
-      .boton2,
-      .carousel-item img,
-      .boton-redes:hover,
-      .boton-redes,
-      .boton:hover,
-      .boton,
-      .carousel-item:nth-child(3) .carousel-text,
-      .carousel-text {
-
-        border-radius: 5px;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-      }
-
-      @media only screen and (min-width: 769px) {
-        header {
-          align-items: center;
-        }
-
-        header nav {
-          display: block;
-        }
-
-        header nav ul {
-          list-style-type: none;
-          display: flex;
-          padding: 0;
-          margin: 0;
-        }
-
-        header nav ul li {
-          margin: 5px;
-        }
-
-        header nav ul li a {
-          color: white;
-          text-decoration: none;
-          font-family: "Arial, Playwrite NG Modern", sans-serif;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .navbar-brand img {
-          width: 50px;
-          height: auto;
-        }
-
-        .navbar-nav .nav-item .nav-link {
-          font-size: 14px;
-        }
-      }
-
-      @media (max-width: 768px) and (max-width: 768px) {
-        .navbar-nav .nav-item .nav-link {
-          font-size: 10.5px;
-        }
-      }
-
-      @media (max-width: 768px) and (min-width: 769px) and (max-width: 1024px) {
-        .navbar-nav .nav-item .nav-link {
-          font-size: 11.9px;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .carousel-item h1 {
-          font-size: 18px;
-          margin-top: -50px;
-          left: 40px;
-        }
-
-        .carousel-item h2 {
-          font-size: 18px;
-          margin-top: 100px;
-          font-size: 18px;
-          margin-top: 100px;
-          font-size: 15px;
-
-          left: 40px;
-        }
-
-        .carousel-item p {
-          font-size: 18px;
-          margin-top: 100px;
-          margin-top: -35px !important;
-        }
-
-        .carousel-item .boton {
-          font-size: 18px;
-          margin-top: 100px;
-        }
-
-        .carousel-item .boton {
-          padding: 8px 16px;
-          font-size: 18px;
-          padding: 10px 15px;
-          font-size: 15px;
-          margin-top: 110px;
-        }
-
-        .carousel-item .boton-redes {
-          padding: 10px 15px;
-          font-size: 15px;
-          margin-top: 130px;
-          left: 50%;
-        }
-
-        .grid-container {
-          grid-template-columns: 1fr;
-        }
-
-        .main .contenedor h2 {
-          font-size: 24px;
-        }
-
-        .main .contenedor p,
-        .main .contenedor .boton {
-          font-size: 14px;
-        }
-
-        .whatsapp img {
-          width: 50px;
-          height: auto;
-        }
-
-        .footer .redes img {
-          width: 30px;
-          height: auto;
-        }
-      }
-
-      @media (min-width: 769px) and (max-width: 1366px) {
-        .navbar-brand img {
-          width: 75px;
-          height: auto;
-        }
-
-        .navbar-nav .nav-item .nav-link {
-          font-size: 16px;
-        }
-      }
-
-      @media (min-width: 769px) and (max-width: 1366px) and (max-width: 768px) {
-        .navbar-nav .nav-item .nav-link {
-          font-size: 12px;
-        }
-      }
-
-      @media (min-width: 769px) and (max-width: 1366px) and (min-width: 769px) and (max-width: 1024px) {
-        .navbar-nav .nav-item .nav-link {
-          font-size: 13.6px;
-        }
-      }
-
-      @media (min-width: 769px) and (max-width: 1366px) {
-
-        .carousel-item h2,
-        .carousel-item p,
-        .carousel-item .boton {
-          font-size: 24px;
-          margin-top: 150px;
-        }
-
-        .carousel-item .boton {
-          padding: 10px 20px;
-          font-size: 20px;
-        }
-
-        .main .contenedor h2 {
-          font-size: 28px;
-        }
-
-        .main .contenedor p,
-        .main .contenedor .boton {
-          font-size: 18px;
-        }
-
-        .whatsapp img {
-          width: 75px;
-          height: auto;
-        }
-
-        .footer .redes img {
-          width: 40px;
-          height: auto;
-        }
-      }
-
-      @media (min-width: 1367px) {
-        .navbar-brand img {
-          width: 100px;
-          height: auto;
-        }
-
-        .navbar-nav .nav-item .nav-link {
-          font-size: 18px;
-        }
-      }
-
-      @media (min-width: 1367px) and (max-width: 768px) {
-        .navbar-nav .nav-item .nav-link {
-          font-size: 13.5px;
-        }
-      }
-
-      @media (min-width: 1367px) and (min-width: 769px) and (max-width: 1024px) {
-        .navbar-nav .nav-item .nav-link {
-          font-size: 15.3px;
-        }
-      }
-
-      @media (min-width: 1367px) {
-        .carousel-item h1 {
-          font-size: 35px;
-          margin-top: -50px;
-          left: 750px;
-        }
-
-        .carousel-item h2 {
-          font-size: 35px;
-          margin-top: 180px;
-          left: 750px;
-        }
-
-        .carousel-item p {
-          font-size: 25px !important;
-          margin-top: 100px;
-          margin-top: -60px !important;
-        }
-
-        .carousel-item .boton {
-          font-size: 36px;
-
-          margin-top: 200px;
-        }
-
-        .carousel-item .boton {
-          padding: 15px 30px;
-          font-size: 24px;
-          padding: 10px 20px;
-          top: 58%;
-          left: 50%;
-        }
-
-        .carousel-item .boton-redes {
-          padding: 10px 20px;
-          font-size: 24px;
-          top: 52%;
-          left: 50%;
-        }
-
-        .main .contenedor h2 {
-          font-size: 32px;
-        }
-
-        .main .contenedor p,
-        .main .contenedor .boton {
-          font-size: 20px;
-        }
-
-        .whatsapp img {
-          width: 100px;
-          height: auto;
-        }
-
-        .footer .redes img {
-          width: 50px;
-          height: auto;
-        }
-      }
-
-      .map-responsive {
-        overflow: hidden;
-        padding-bottom: 56.25%;
-        position: relative;
-        height: 0;
-      }
-
-      .map-responsive iframe {
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-      }
-
-      .footer,
-      #contacto,
-      .main-novedades,
-      .grid-item,
-      #sabores,
-      .integrante,
-      #historia h1,
-      #historia h2,
-      #historia,
-      .main,
-      .boton,
-      .carousel-item:nth-child(3) .carousel-text,
-      .carousel-text {
-        text-align: center;
-      }
-
-      .grid-item img,
-      .grid-item,
-      .imagen-pequeña,
-      .imagen-grande,
-      .boton2:hover,
-      .boton2,
-      .carousel-item img,
-      .boton:hover,
-      .boton,
-      .carousel-item:nth-child(3) .carousel-text,
-      .carousel-text {
-
-        .footer,
-        #contacto,
-        .main-novedades,
-        .grid-item,
-        #sabores,
-        .integrante,
-        #historia h1,
-        #historia h2,
-        #historia,
-        .main,
-        .boton-redes,
-        .boton,
-        .carousel-item:nth-child(3) .carousel-text,
-        .carousel-text {
-          text-align: center;
-        }
-
-        .grid-item img,
-        .grid-item,
-        .imagen-ajustada,
-        .boton2:hover,
-        .boton2,
-        .carousel-item img,
-        .boton-redes:hover,
-        .boton-redes,
-        .boton:hover,
-        .boton,
-        .carousel-item:nth-child(3) .carousel-text,
-        .carousel-text {
-
-          border-radius: 5px;
-        }
-
-        body {
-          background: rgb(249, 238, 217);
-          background: linear-gradient(63deg, rgb(17, 16, 16) 0%, rgb(58, 58, 57) 100%);
-          font-family: "Arial", sans-serif;
-          line-height: 1.6;
-        }
-
-        .carousel-text {
-          position: absolute;
-          top: 32%;
-          left: 33%;
-          transform: translate(-50%, -50%);
-          font-size: 2rem;
-          color: #f7f6e7;
-          font-family: "Playwrite NG Modern", sans-serif;
-          box-shadow: 0 2px 4px white;
-          padding: 10px;
-          background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .carousel-item:nth-child(3) .carousel-text {
-          position: absolute;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          margin-top: -80px;
-          font-size: 1rem;
-          padding: 5px;
-          box-shadow: none !important;
-        }
-
-        .boton {
-          position: absolute;
-          margin-top: -70px !important;
-          font-size: 0, 5rem;
-          padding: 2px;
-          box-shadow: none !important;
-        }
-
-        .carousel-item h2 {
-          font-size: 1, 5rem;
-        }
-
-        .boton {
-          position: absolute;
-          top: 58%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-decoration: none;
-          padding: 10px 20px;
-          font-size: 24px;
-          color: black;
-          margin-top: 150px;
-          font-family: "Arial", sans-serif;
-          box-shadow: 0 6px 8px black;
-        }
-
-        .boton:hover {
-          color: rgba(75, 44, 3, 0.945);
-        }
-
-        .boton-redes {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-decoration: none;
-          padding: 10px 20px;
-          font-size: 24px;
-          color: rgb(39, 35, 35);
-          margin-top: 200px;
-          font-family: "Arial", sans-serif;
-          box-shadow: 0 4px 6px black;
-        }
-
-        .boton.redes {
-          color: white;
-          box-shadow: 0 4px 6px burlywood;
-        }
-
-        .boton:hover {
-          font-size: 20px;
-          color: white !important;
-          margin-top: 180px;
-          font-family: "Arial", sans-serif;
-          box-shadow: 0 4px 6px burlywood;
-        }
-
-        .boton-redes:hover {
-          color: rgb(150, 104, 44) !important;
-        }
-
-        .carousel-item img {
-          width: 100%;
-          max-width: 550px;
-          padding: 20px;
-          height: auto;
-          display: block;
-          margin: 20px auto;
-          border: 2px solid gray;
-          box-sizing: border-box;
-        }
-
-        .container {
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 0 20px;
-        }
-
-        .main {
-          background-color: hsla(43, 32%, 22%, 0.952);
-          padding: 50px 0;
-        }
-
-        .main h3 {
-          color: #fff;
-          font-size: 3rem;
-          margin-bottom: 20px;
-          font-family: "Playwrite NG Modern", sans-serif;
-        }
-
-        .main p {
-          color: #fff;
-          margin-bottom: 20px;
-        }
-
-        .main a {
-          color: #fff;
-        }
-
-        .boton2 {
-          text-decoration: none;
-          padding: 10px 20px;
-          box-shadow: 0 4px 6px burlywood;
-        }
-
-        .boton2:hover {
-          color: rgba(216, 148, 60, 0.945) !important;
-        }
-
-        #historia {
-          padding: 20px;
-          color: white;
-        }
-
-        #historia h1,
-        #historia h2 {
-          font-size: 2.5rem;
-          font-family: "Playwrite NG Modern", sans-serif;
-        }
-
-        #historia h3 {
-          margin-top: 10px;
-        }
-
-        .integrantes-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-          gap: 20px;
-          margin-top: 20px;
-          font-family: "Playwrite NG Modern", sans-serif;
-        }
-
-        .imagen-grande {
-          grid-column: span 2;
-          width: 80%;
-          height: auto;
-        }
-
-        .imagen-ajustada {
-          width: 80%;
-          height: 50%;
-          object-fit: cover;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        /*.imagen-grande {
-            grid-column: span 2;
-            width: 80%;
-            height: auto;
-            @extend %rounded;
-          }
-
-          .imagen-pequeña {
-            width: 80%;
-            height: auto;
-            @extend %rounded;
-          }*/
-
-        .integrante h4 {
-          margin: 10px 0 5px;
-        }
-
-        .integrante p {
-          margin-left: 60px;
-          grid-column: span 2;
-          width: 70%;
-          text-align: justify;
-        }
-
-        #sabores {
-          padding: 20px;
-          color: white;
-        }
-
-        #sabores h1 {
-          font-size: 2.5em;
-          margin-bottom: 10px;
-          font-family: "Playwrite NG Modern", sans-serif;
-        }
-
-        #sabores p {
-          margin: 10px 0;
-          color: #1A1A1A;
-          font-family: "Playwrite NG Modern", sans-serif;
-        }
-
-        .boton-compra {
-          display: inline-block;
-          background-color: burlywood;
-          color: rgb(58, 58, 57);
-          padding: 10px 20px;
-          text-align: center;
-          text-decoration: none;
-          border-radius: 5px;
-          font-weight: bold;
-          transition: background-color 0.3s ease;
-          margin-top: 20px;
-        }
-
-        .boton-compra:hover {
-          background-color: rgb(58, 58, 57);
-          color: burlywood;
-        }
-
-        .grid-container {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-          gap: 1rem;
-          padding: 1rem;
-        }
-
-        .grid-item {
-          border: 1px solid #ccc;
-          display: flex;
-          flex-direction: column;
-          border: 1px solid #ccc;
-          justify-content: space-between;
-          padding: 1rem;
-          background-color: #f9f9f9;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .grid-item img {
-          width: 100%;
-          height: 181px;
-          border-radius: 8px;
-        }
-
-        .grid-item p {
-          margin: 10px 0;
-        }
-
-        .main-novedades {
-          background-color: #333;
-          color: #fff;
-          padding: 12% 0;
-        }
-
-        .main-novedades .contenedor h1 {
-          margin-bottom: 20px;
-        }
-
-        .main-novedades .contenedor h2 {
-          margin-bottom: 20px;
-        }
-
-        .main-novedades .contenedor img {
-          animation: bounce 2s infinite;
-          margin-top: 20px;
-        }
-
-        @keyframes bounce {
-
-          0%,
-          100% {
-            transform: scale(1);
-          }
-
-          50% {
-            transform: scale(1.2);
-          }
-        }
-
-        #contacto {
-          color: #fff;
-          padding: 2rem 0;
-        }
-
-        #contacto .col-md-4 {
-          padding: 2rem;
-          border-radius: 0.5rem;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-        }
-
-        #contacto h1 {
-          font-family: "Playwrite NG Modern", sans-serif;
-          font-size: 2rem;
-          margin-bottom: 1.5rem;
-
-        }
-
-        #contacto h2 {
-          font-family: "Playwrite NG Modern", sans-serif;
-          font-size: 2rem;
-          margin-bottom: 1.5rem;
-        }
-
-        #contacto .form-control {
-          border-radius: 0.25rem;
-          border: 1px solid #ced4da;
-          margin-left: 1rem;
-        }
-
-        #contacto .btn-primary {
-          background-color: rgba(75, 44, 3, 0.945);
-          border-color: whitesmoke;
-          border-radius: 0.25rem;
-          padding: 0.5rem 1.5rem;
-          transition: background-color 0.3s ease, border-color 0.3s ease;
-        }
-
-        #contacto .btn-primary:hover {
-          background-color: rgb(58, 58, 57);
-          border-color: burlywood;
-        }
-
-        #contacto address {
-          font-family: "Playwrite NG Modern", sans-serif;
-          font-size: x-large;
-          font-size: large;
-        }
-
-        .whatsapp img {
-          position: fixed;
-          right: 25px;
-          bottom: 40px;
-          width: 50px;
-          height: auto;
-          transition: 2s;
-        }
-
-        .whatsapp img:hover {
-          transform: rotate(360deg);
-        }
-
-        .footer {
-          background: rgb(249, 238, 217);
-          background: linear-gradient(63deg, rgb(17, 16, 16) 0%, rgb(58, 58, 57) 100%);
-          color: #fff;
-          padding: 20px 0;
-        }
-
-        .redes {
-          margin-bottom: 20px;
-        }
-
-        .redes a {
-          display: inline-block;
-          margin: 0 10px;
-        }
-
-        .texto p {
-          font-size: 14px;
-        }
-      }
-    }
+    text-decoration: none;
+    font-family: "Arial, Playwrite NG Modern", sans-serif;
   }
 }
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 50px;
+    height: auto;
+  }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  .navbar-nav .nav-item .nav-link {
+    font-size: 10.5px;
+  }
+}
+@media (max-width: 768px) and (min-width: 769px) and (max-width: 1024px) {
+  .navbar-nav .nav-item .nav-link {
+    font-size: 11.9px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-item h1 {
+    font-size: 18px;
+    margin-top: -50px;
+    left: 40px;
+  }
+  .carousel-item h2 {
+    font-size: 18px;
+    margin-top: 100px;
+    font-size: 18px;
+    margin-top: 100px;
+    left: 40px;
+  }
+  .carousel-item h2 {
+    font-size: 18px;
+    margin-top: 100px;
+    font-size: 15px;
+    left: 40px;
+  }
+  .carousel-item p {
+    font-size: 18px;
+    margin-top: 100px;
+    margin-top: -35px !important;
+  }
+  .carousel-item .boton {
+    font-size: 18px;
+    margin-top: 100px;
+    padding: 8px 16px;
+  }
+  .carousel-item .boton {
+    padding: 10px 15px;
+    font-size: 15px;
+    margin-top: 110px;
+  }
+  .carousel-item .boton-redes {
+    padding: 10px 15px;
+    font-size: 15px;
+    margin-top: 130px;
+    left: 50%;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .main .contenedor h2 {
+    font-size: 24px;
+  }
+  .main .contenedor p,
+  .main .contenedor .boton {
+    font-size: 14px;
+  }
+  .whatsapp img {
+    width: 50px;
+    height: auto;
+  }
+  .footer .redes img {
+    width: 30px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) and (min-width: 769px) and (max-width: 1366px) {
+  .navbar-brand img {
+    width: 75px;
+    height: auto;
+  }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) and (min-width: 769px) and (max-width: 1366px) and (max-width: 768px) {
+  .navbar-nav .nav-item .nav-link {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) and (min-width: 769px) and (max-width: 1366px) and (min-width: 769px) and (max-width: 1024px) {
+  .navbar-nav .nav-item .nav-link {
+    font-size: 13.6px;
+  }
+}
+@media (max-width: 768px) and (min-width: 769px) and (max-width: 1366px) {
+  .carousel-item h2,
+  .carousel-item p,
+  .carousel-item .boton {
+    font-size: 24px;
+    margin-top: 150px;
+  }
+  .carousel-item .boton {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  .main .contenedor h2 {
+    font-size: 28px;
+  }
+  .main .contenedor p,
+  .main .contenedor .boton {
+    font-size: 18px;
+  }
+  .whatsapp img {
+    width: 75px;
+    height: auto;
+  }
+  .footer .redes img {
+    width: 40px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) and (min-width: 1367px) {
+  .navbar-brand img {
+    width: 100px;
+    height: auto;
+  }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) and (min-width: 1367px) and (max-width: 768px) {
+  .navbar-nav .nav-item .nav-link {
+    font-size: 13.5px;
+  }
+}
+@media (max-width: 768px) and (min-width: 1367px) and (min-width: 769px) and (max-width: 1024px) {
+  .navbar-nav .nav-item .nav-link {
+    font-size: 15.3px;
+  }
+}
+@media (max-width: 768px) and (min-width: 1367px) {
+  .carousel-item h1 {
+    font-size: 35px;
+    margin-top: -50px;
+    left: 750px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-item h2 {
+    font-size: 35px;
+    margin-top: 180px;
+    left: 750px;
+  }
+  .carousel-item p {
+    font-size: 25px !important;
+    margin-top: 100px;
+    margin-top: -60px !important;
+  }
+  .carousel-item .boton {
+    font-size: 36px;
+    margin-top: 200px;
+  }
+  .carousel-item .boton {
+    padding: 15px 30px;
+    font-size: 24px;
+    padding: 10px 20px;
+    top: 58%;
+    left: 50%;
+  }
+  .carousel-item .boton-redes {
+    padding: 10px 20px;
+    font-size: 24px;
+    top: 52%;
+    left: 50%;
+  }
+  .main .contenedor h2 {
+    font-size: 32px;
+  }
+  .main .contenedor p,
+  .main .contenedor .boton {
+    font-size: 20px;
+  }
+  .whatsapp img {
+    width: 100px;
+    height: auto;
+  }
+  .footer .redes img {
+    width: 50px;
+    height: auto;
+  }
+}
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.footer, #historia, #contacto, .main-novedades, .main {
+  text-align: center;
+}
+
+body {
+  background: #fffaf3;
+  color: #6e4c2b;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main {
+  background-color: #e8b4b8;
+  padding: 48px 0;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(232, 180, 184, 0.15);
+}
+
+.main h3 {
+  color: #f7cac9;
+  font-size: 2.5rem;
+  margin-bottom: 18px;
+  font-family: "Sevillana", cursive;
+}
+
+.main p {
+  color: #6e4c2b;
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.main a {
+  color: #d4af37;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.boton, .boton2, .boton-compra {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  color: #fffaf3;
+  background-color: #d4af37;
+  border-radius: 8px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  box-shadow: 0 2px 6px rgba(212, 175, 55, 0.15);
+  border: none;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  margin-top: 12px;
+}
+
+.boton:hover, .boton2:hover, .boton-compra:hover {
+  background-color: #f7cac9;
+  color: #6e4c2b;
+  box-shadow: 0 4px 12px rgba(232, 180, 184, 0.25);
+}
+
+.carousel-text {
+  position: absolute;
+  top: 32%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2rem;
+  color: #6e4c2b;
+  font-family: "Sevillana", cursive;
+  background-color: rgba(232, 180, 184, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(232, 180, 184, 0.15);
+  padding: 10px 24px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  padding: 1.2rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffaf3;
+  border: 1px solid #e8b4b8;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(232, 180, 184, 0.1);
+  padding: 1.2rem;
+  transition: box-shadow 0.3s;
+}
+
+.grid-item:hover {
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.18);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  margin: 8px 0;
+  color: #6e4c2b;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+#historia, #contacto, .main-novedades {
+  color: #6e4c2b;
+  padding: 2rem 0;
+}
+
+#contacto .col-md-4 {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(232, 180, 184, 0.1);
+  background: #fffaf3;
+}
+
+#contacto h1, #contacto h2 {
+  font-family: "Sevillana", cursive;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+#contacto .form-control {
+  border-radius: 0.25rem;
+  border: 1px solid #e8b4b8;
+  margin-left: 1rem;
+}
+
+#contacto .btn-primary {
+  background-color: #d4af37;
+  border-color: #e8b4b8;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#contacto .btn-primary:hover {
+  background-color: #f7cac9;
+  border-color: #d4af37;
+}
+
+#contacto address {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+}
+
+.whatsapp img {
+  position: fixed;
+  right: 25px;
+  bottom: 40px;
+  width: 50px;
+  height: auto;
+  transition: 0.6s;
+}
+
+.whatsapp img:hover {
+  transform: rotate(360deg) scale(1.1);
+}
+
+.footer {
+  background: linear-gradient(63deg, #e8b4b8 0%, #f7cac9 100%);
+  color: #6e4c2b;
+  padding: 20px 0;
+  border-top: 1px solid #e8b4b8;
+}
+
+.redes {
+  margin-bottom: 18px;
+}
+
+.redes a {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.texto p {
+  font-size: 14px;
+  color: #6e4c2b;
+}
+
+/*# sourceMappingURL=style.css.map */

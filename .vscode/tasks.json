@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compilar SCSS a CSS automáticamente",
+			"type": "shell",
+			"command": "sass --watch scss/style.scss:css/style.css",
+			"args": [],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
