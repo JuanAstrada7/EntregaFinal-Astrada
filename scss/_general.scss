@@ -54,10 +54,22 @@ body {
   border: none;
   transition: background 0.3s, color 0.3s, box-shadow 0.3s;
   margin-top: 12px;
+  outline: none;
 }
 
 .boton:hover, .boton2:hover, .boton-compra:hover {
   background-color: $color-secondary;
+// Accesibilidad: resaltar foco visible en botones y enlaces
+.boton:focus-visible, .boton2:focus-visible, .boton-compra:focus-visible, a:focus-visible {
+  box-shadow: 0 0 0 3px $color-accent;
+  outline: 2px solid $color-accent;
+}
+
+// Accesibilidad: resaltar foco visible en inputs y textarea
+input:focus-visible, textarea:focus-visible {
+  box-shadow: 0 0 0 3px $color-primary;
+  outline: 2px solid $color-primary;
+}
   color: $color-text;
   box-shadow: 0 4px 12px rgba(232, 180, 184, 0.25);
 }
